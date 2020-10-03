@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MPSProject">
+    <projectModules>
+      <modulePath path="$PROJECT_DIR$/languages/com.juliuscanute.alfred/com.juliuscanute.alfred.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/com.juliuscanute.alfred/sandbox/com.juliuscanute.alfred.sandbox.msd" folder="" />
+    </projectModules>
+  </component>
+</project>
