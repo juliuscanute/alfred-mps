@@ -50,7 +50,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.KeyField:
         if (props_KeyField == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("KeyField");
+          cpb.presentationByName();
           props_KeyField = cpb.create();
         }
         return props_KeyField;

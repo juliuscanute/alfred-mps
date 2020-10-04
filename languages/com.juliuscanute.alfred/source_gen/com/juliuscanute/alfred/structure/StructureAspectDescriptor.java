@@ -110,6 +110,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   private static ConceptDescriptor createDescriptorForKeyField() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("com.juliuscanute.alfred", "KeyField", 0xd6f1829c44d840a5L, 0xb1c7596bc2927669L, 0x4c7ca09238492e49L);
     b.class_(false, false, false);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:fd5d1e9a-b58d-43c7-9ef1-adfe2cf25cca(com.juliuscanute.alfred.structure)/5511456593864633929");
     b.version(2);
     b.aggregate("element", 0x2b916fb1028edba1L).target(0xd6f1829c44d840a5L, 0xb1c7596bc2927669L, 0x2b916fb1028edb79L).optional(false).ordered(true).multiple(true).origin("3139413221296757665").done();

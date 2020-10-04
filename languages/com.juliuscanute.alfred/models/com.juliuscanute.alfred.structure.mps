@@ -140,6 +140,9 @@
       <property role="20lbJX" value="fLJekj6/_1__n" />
       <ref role="20lvS9" node="2IhrV42zHHT" resolve="KeyElement" />
     </node>
+    <node concept="PrWs8" id="2IhrV42BVpa" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
   </node>
   <node concept="1TIwiD" id="4LWC98SiiUd">
     <property role="EcuMT" value="5511456593864633997" />
