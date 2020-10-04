@@ -14,8 +14,13 @@ import jetbrains.mps.smodel.adapter.ids.PrimitiveTypeId;
 
 public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptAlfredAction = createDescriptorForAlfredAction();
+  /*package*/ final ConceptDescriptor myConceptHostField = createDescriptorForHostField();
+  /*package*/ final ConceptDescriptor myConceptKeyElement = createDescriptorForKeyElement();
   /*package*/ final ConceptDescriptor myConceptKeyField = createDescriptorForKeyField();
   /*package*/ final ConceptDescriptor myConceptKeyFieldReference = createDescriptorForKeyFieldReference();
+  /*package*/ final ConceptDescriptor myConceptPathField = createDescriptorForPathField();
+  /*package*/ final ConceptDescriptor myConceptSchemeField = createDescriptorForSchemeField();
+  /*package*/ final ConceptDescriptor myConceptSinglePathField = createDescriptorForSinglePathField();
   /*package*/ final ConceptDescriptor myConceptSubtitleField = createDescriptorForSubtitleField();
   /*package*/ final ConceptDescriptor myConceptTitleField = createDescriptorForTitleField();
   /*package*/ final ConceptDescriptor myConceptUrlField = createDescriptorForUrlField();
@@ -35,7 +40,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptAlfredAction, myConceptKeyField, myConceptKeyFieldReference, myConceptSubtitleField, myConceptTitleField, myConceptUrlField);
+    return Arrays.asList(myConceptAlfredAction, myConceptHostField, myConceptKeyElement, myConceptKeyField, myConceptKeyFieldReference, myConceptPathField, myConceptSchemeField, myConceptSinglePathField, myConceptSubtitleField, myConceptTitleField, myConceptUrlField);
   }
 
   @Override
@@ -44,10 +49,20 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     switch (myIndexSwitch.index(id)) {
       case LanguageConceptSwitch.AlfredAction:
         return myConceptAlfredAction;
+      case LanguageConceptSwitch.HostField:
+        return myConceptHostField;
+      case LanguageConceptSwitch.KeyElement:
+        return myConceptKeyElement;
       case LanguageConceptSwitch.KeyField:
         return myConceptKeyField;
       case LanguageConceptSwitch.KeyFieldReference:
         return myConceptKeyFieldReference;
+      case LanguageConceptSwitch.PathField:
+        return myConceptPathField;
+      case LanguageConceptSwitch.SchemeField:
+        return myConceptSchemeField;
+      case LanguageConceptSwitch.SinglePathField:
+        return myConceptSinglePathField;
       case LanguageConceptSwitch.SubtitleField:
         return myConceptSubtitleField;
       case LanguageConceptSwitch.TitleField:
@@ -76,12 +91,28 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.aggregate("subtitleField", 0x4c7ca09238492fa6L).target(0xd6f1829c44d840a5L, 0xb1c7596bc2927669L, 0x4c7ca09238492e8dL).optional(false).ordered(true).multiple(false).origin("5511456593864634278").done();
     return b.create();
   }
+  private static ConceptDescriptor createDescriptorForHostField() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("com.juliuscanute.alfred", "HostField", 0xd6f1829c44d840a5L, 0xb1c7596bc2927669L, 0xb85403e7a8790b6L);
+    b.class_(false, false, false);
+    b.origin("r:fd5d1e9a-b58d-43c7-9ef1-adfe2cf25cca(com.juliuscanute.alfred.structure)/830140343407579318");
+    b.version(2);
+    b.property("host", 0xb85403e7a8790bdL).type(PrimitiveTypeId.STRING).origin("830140343407579325").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForKeyElement() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("com.juliuscanute.alfred", "KeyElement", 0xd6f1829c44d840a5L, 0xb1c7596bc2927669L, 0x2b916fb1028edb79L);
+    b.class_(false, false, false);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
+    b.origin("r:fd5d1e9a-b58d-43c7-9ef1-adfe2cf25cca(com.juliuscanute.alfred.structure)/3139413221296757625");
+    b.version(2);
+    return b.create();
+  }
   private static ConceptDescriptor createDescriptorForKeyField() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("com.juliuscanute.alfred", "KeyField", 0xd6f1829c44d840a5L, 0xb1c7596bc2927669L, 0x4c7ca09238492e49L);
     b.class_(false, false, false);
-    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:fd5d1e9a-b58d-43c7-9ef1-adfe2cf25cca(com.juliuscanute.alfred.structure)/5511456593864633929");
     b.version(2);
+    b.aggregate("element", 0x2b916fb1028edba1L).target(0xd6f1829c44d840a5L, 0xb1c7596bc2927669L, 0x2b916fb1028edb79L).optional(false).ordered(true).multiple(true).origin("3139413221296757665").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForKeyFieldReference() {
@@ -92,6 +123,31 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:fd5d1e9a-b58d-43c7-9ef1-adfe2cf25cca(com.juliuscanute.alfred.structure)/5511456593864929499");
     b.version(2);
     b.associate("keyField", 0x4c7ca092384db0dcL).target(0xd6f1829c44d840a5L, 0xb1c7596bc2927669L, 0x4c7ca09238492e49L).optional(false).origin("5511456593864929500").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForPathField() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("com.juliuscanute.alfred", "PathField", 0xd6f1829c44d840a5L, 0xb1c7596bc2927669L, 0xb85403e7a8790b7L);
+    b.class_(false, false, false);
+    b.origin("r:fd5d1e9a-b58d-43c7-9ef1-adfe2cf25cca(com.juliuscanute.alfred.structure)/830140343407579319");
+    b.version(2);
+    b.aggregate("paths", 0xb85403e7a879134L).target(0xd6f1829c44d840a5L, 0xb1c7596bc2927669L, 0xb85403e7a879112L).optional(true).ordered(true).multiple(true).origin("830140343407579444").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForSchemeField() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("com.juliuscanute.alfred", "SchemeField", 0xd6f1829c44d840a5L, 0xb1c7596bc2927669L, 0xb85403e7a8790b8L);
+    b.class_(false, false, false);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
+    b.origin("r:fd5d1e9a-b58d-43c7-9ef1-adfe2cf25cca(com.juliuscanute.alfred.structure)/830140343407579320");
+    b.version(2);
+    b.property("scheme", 0xb85403e7a8790b9L).type(PrimitiveTypeId.STRING).origin("830140343407579321").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForSinglePathField() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("com.juliuscanute.alfred", "SinglePathField", 0xd6f1829c44d840a5L, 0xb1c7596bc2927669L, 0xb85403e7a879112L);
+    b.class_(false, false, false);
+    b.origin("r:fd5d1e9a-b58d-43c7-9ef1-adfe2cf25cca(com.juliuscanute.alfred.structure)/830140343407579410");
+    b.version(2);
+    b.property("path", 0xb85403e7a879113L).type(PrimitiveTypeId.STRING).origin("830140343407579411").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForSubtitleField() {
@@ -119,6 +175,9 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:fd5d1e9a-b58d-43c7-9ef1-adfe2cf25cca(com.juliuscanute.alfred.structure)/8910907118334228281");
     b.version(2);
     b.property("url", 0x7ba9e6cfe6cfb73aL).type(PrimitiveTypeId.STRING).origin("8910907118334228282").done();
+    b.aggregate("scheme", 0xb85403e7a8790bfL).target(0xd6f1829c44d840a5L, 0xb1c7596bc2927669L, 0xb85403e7a8790b8L).optional(false).ordered(true).multiple(false).origin("830140343407579327").done();
+    b.aggregate("host", 0xb85403e7a8790c1L).target(0xd6f1829c44d840a5L, 0xb1c7596bc2927669L, 0xb85403e7a8790b6L).optional(false).ordered(true).multiple(false).origin("830140343407579329").done();
+    b.aggregate("path", 0xb85403e7a8790c4L).target(0xd6f1829c44d840a5L, 0xb1c7596bc2927669L, 0xb85403e7a8790b7L).optional(false).ordered(true).multiple(false).origin("830140343407579332").done();
     return b.create();
   }
 }

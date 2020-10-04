@@ -10,17 +10,27 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 public final class LanguageConceptSwitch {
   private final LanguageConceptIndex myIndex;
   public static final int AlfredAction = 0;
-  public static final int KeyField = 1;
-  public static final int KeyFieldReference = 2;
-  public static final int SubtitleField = 3;
-  public static final int TitleField = 4;
-  public static final int UrlField = 5;
+  public static final int HostField = 1;
+  public static final int KeyElement = 2;
+  public static final int KeyField = 3;
+  public static final int KeyFieldReference = 4;
+  public static final int PathField = 5;
+  public static final int SchemeField = 6;
+  public static final int SinglePathField = 7;
+  public static final int SubtitleField = 8;
+  public static final int TitleField = 9;
+  public static final int UrlField = 10;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0xd6f1829c44d840a5L, 0xb1c7596bc2927669L);
     builder.put(0x7ba9e6cfe6cfc808L, AlfredAction);
+    builder.put(0xb85403e7a8790b6L, HostField);
+    builder.put(0x2b916fb1028edb79L, KeyElement);
     builder.put(0x4c7ca09238492e49L, KeyField);
     builder.put(0x4c7ca092384db0dbL, KeyFieldReference);
+    builder.put(0xb85403e7a8790b7L, PathField);
+    builder.put(0xb85403e7a8790b8L, SchemeField);
+    builder.put(0xb85403e7a879112L, SinglePathField);
     builder.put(0x4c7ca09238492e8dL, SubtitleField);
     builder.put(0x4c7ca09238492e46L, TitleField);
     builder.put(0x7ba9e6cfe6cfb739L, UrlField);

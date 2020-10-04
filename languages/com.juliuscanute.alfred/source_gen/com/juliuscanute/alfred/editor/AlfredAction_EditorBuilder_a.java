@@ -36,7 +36,6 @@ import jetbrains.mps.nodeEditor.cellMenu.SEmptyContainmentSubstituteInfo;
 import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
 import jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation;
 import jetbrains.mps.nodeEditor.cellProviders.AbstractCellListHandler;
-import jetbrains.mps.nodeEditor.cellLayout.CellLayout_Horizontal;
 import jetbrains.mps.lang.editor.cellProviders.RefNodeListHandler;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.nodeEditor.cellActions.CellAction_DeleteNode;
@@ -176,7 +175,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
   }
   private EditorCell createRefNodeList_0() {
     AbstractCellListHandler handler = new keyFieldListHandler_n4etjk_e0(myNode, getEditorContext());
-    EditorCell_Collection editorCell = handler.createCells(new CellLayout_Horizontal(), false);
+    EditorCell_Collection editorCell = handler.createCells(new CellLayout_Indent(), false);
     editorCell.setCellId("refNodeList_keyField");
     Style style = new StyleImpl();
     style.set(StyleAttributes.SELECTABLE, false);
@@ -205,6 +204,9 @@ import org.jetbrains.mps.openapi.language.SConcept;
       return CONCEPTS.KeyField$Gf;
     }
 
+    private String getSeparatorText(SNode prevNode, SNode nextNode) {
+      return ",";
+    }
     public EditorCell createNodeCell(SNode elementNode) {
       EditorCell elementCell = getUpdateSession().updateChildNodeCell(elementNode);
       installElementCellActions(elementNode, elementCell, false);
@@ -250,6 +252,18 @@ import org.jetbrains.mps.openapi.language.SConcept;
           elementCell.putUserObject(AbstractCellListHandler.ELEMENT_CELL_ACTIONS_SET, OBJ);
         }
       }
+    }
+    @Override
+    public EditorCell createSeparatorCell(SNode prevNode, SNode nextNode) {
+      EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), getNode(), keyFieldListHandler_n4etjk_e0.this.getSeparatorText(prevNode, nextNode));
+      editorCell.setSelectable(false);
+      Style style = new StyleImpl();
+      style.set(StyleAttributes.LAYOUT_CONSTRAINT, "punctuation");
+      style.set(StyleAttributes.PUNCTUATION_LEFT, true);
+      editorCell.getStyle().putAll(style);
+      editorCell.setAction(CellActionType.DELETE, new CellAction_DeleteNode(prevNode, CellAction_DeleteNode.DeleteDirection.FORWARD));
+      editorCell.setAction(CellActionType.BACKSPACE, new CellAction_DeleteNode(prevNode, CellAction_DeleteNode.DeleteDirection.BACKWARD));
+      return editorCell;
     }
   }
   private EditorCell createRefNode_1() {

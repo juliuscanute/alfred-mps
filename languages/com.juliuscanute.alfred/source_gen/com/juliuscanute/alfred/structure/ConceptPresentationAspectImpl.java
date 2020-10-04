@@ -10,8 +10,13 @@ import jetbrains.mps.smodel.runtime.ConceptPresentationBuilder;
 
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
   private ConceptPresentation props_AlfredAction;
+  private ConceptPresentation props_HostField;
+  private ConceptPresentation props_KeyElement;
   private ConceptPresentation props_KeyField;
   private ConceptPresentation props_KeyFieldReference;
+  private ConceptPresentation props_PathField;
+  private ConceptPresentation props_SchemeField;
+  private ConceptPresentation props_SinglePathField;
   private ConceptPresentation props_SubtitleField;
   private ConceptPresentation props_TitleField;
   private ConceptPresentation props_UrlField;
@@ -28,10 +33,24 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_AlfredAction = cpb.create();
         }
         return props_AlfredAction;
+      case LanguageConceptSwitch.HostField:
+        if (props_HostField == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("HostField");
+          props_HostField = cpb.create();
+        }
+        return props_HostField;
+      case LanguageConceptSwitch.KeyElement:
+        if (props_KeyElement == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_KeyElement = cpb.create();
+        }
+        return props_KeyElement;
       case LanguageConceptSwitch.KeyField:
         if (props_KeyField == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.presentationByName();
+          cpb.rawPresentation("KeyField");
           props_KeyField = cpb.create();
         }
         return props_KeyField;
@@ -42,6 +61,27 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_KeyFieldReference = cpb.create();
         }
         return props_KeyFieldReference;
+      case LanguageConceptSwitch.PathField:
+        if (props_PathField == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("PathField");
+          props_PathField = cpb.create();
+        }
+        return props_PathField;
+      case LanguageConceptSwitch.SchemeField:
+        if (props_SchemeField == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_SchemeField = cpb.create();
+        }
+        return props_SchemeField;
+      case LanguageConceptSwitch.SinglePathField:
+        if (props_SinglePathField == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("SinglePathField");
+          props_SinglePathField = cpb.create();
+        }
+        return props_SinglePathField;
       case LanguageConceptSwitch.SubtitleField:
         if (props_SubtitleField == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
