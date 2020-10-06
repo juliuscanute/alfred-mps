@@ -91,6 +91,9 @@
       </concept>
     </language>
     <language id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator">
+      <concept id="1114706874351" name="jetbrains.mps.lang.generator.structure.CopySrcNodeMacro" flags="ln" index="29HgVG">
+        <child id="1168024447342" name="sourceNodeQuery" index="3NFExx" />
+      </concept>
       <concept id="1114729360583" name="jetbrains.mps.lang.generator.structure.CopySrcListMacro" flags="ln" index="2b32R4">
         <child id="1168278589236" name="sourceNodesQuery" index="2P8S$" />
       </concept>
@@ -111,6 +114,7 @@
       <concept id="1722980698497626400" name="jetbrains.mps.lang.generator.structure.ITemplateCall" flags="ng" index="v9R3L">
         <reference id="1722980698497626483" name="template" index="v9R2y" />
       </concept>
+      <concept id="5133195082121471908" name="jetbrains.mps.lang.generator.structure.LabelMacro" flags="ln" index="2ZBi8u" />
       <concept id="1167169188348" name="jetbrains.mps.lang.generator.structure.TemplateFunctionParameter_sourceNode" flags="nn" index="30H73N" />
       <concept id="1167169308231" name="jetbrains.mps.lang.generator.structure.BaseMappingRule" flags="ng" index="30H$t8">
         <reference id="1167169349424" name="applicableConcept" index="30HIoZ" />
@@ -133,6 +137,7 @@
       </concept>
       <concept id="1167756080639" name="jetbrains.mps.lang.generator.structure.PropertyMacro_GetPropertyValue" flags="in" index="3zFVjK" />
       <concept id="1167951910403" name="jetbrains.mps.lang.generator.structure.SourceSubstituteMacro_SourceNodesQuery" flags="in" index="3JmXsc" />
+      <concept id="1168024337012" name="jetbrains.mps.lang.generator.structure.SourceSubstituteMacro_SourceNodeQuery" flags="in" index="3NFfHV" />
       <concept id="1118786554307" name="jetbrains.mps.lang.generator.structure.LoopMacro" flags="ln" index="1WS0z7">
         <child id="1167952069335" name="sourceNodesQuery" index="3Jn$fo" />
       </concept>
@@ -196,7 +201,7 @@
     </language>
   </registry>
   <node concept="bUwia" id="7IDTGZANVie">
-    <property role="TrG5h" value="main" />
+    <property role="TrG5h" value="main_textgen" />
     <node concept="2rT7sh" id="2IhrV42DZMd" role="2rTMjI">
       <property role="TrG5h" value="InputFieldDeclaration" />
       <ref role="2rTdP9" to="brl5:4LWC98SiiT9" resolve="KeyField" />
@@ -210,6 +215,18 @@
       <ref role="30HIoZ" to="brl5:4LWC98SiiT9" resolve="KeyField" />
       <node concept="j$656" id="2IhrV42AIFh" role="1lVwrX">
         <ref role="v9R2y" node="2IhrV42AIgn" resolve="reduce_Key.py" />
+      </node>
+    </node>
+    <node concept="3aamgX" id="2IhrV42EfRH" role="3acgRq">
+      <ref role="30HIoZ" to="brl5:4LWC98Sjr3r" resolve="KeyFieldReference" />
+      <node concept="j$656" id="2IhrV42EfRN" role="1lVwrX">
+        <ref role="v9R2y" node="2IhrV42EfR_" resolve="reduce_KeyReference.py" />
+      </node>
+    </node>
+    <node concept="3aamgX" id="2IhrV42Eg63" role="3acgRq">
+      <ref role="30HIoZ" to="brl5:4LWC98SiiT6" resolve="TitleField" />
+      <node concept="j$656" id="2IhrV42Eg6b" role="1lVwrX">
+        <ref role="v9R2y" node="2IhrV42EfHE" resolve="reduce_Title.py" />
       </node>
     </node>
   </node>
@@ -271,7 +288,6 @@
         </node>
         <node concept="2EixSi" id="2IhrV42DLv0" role="2EinRH" />
         <node concept="2b32R4" id="2IhrV42DT2T" role="lGtFl">
-          <ref role="2rW$FS" node="2IhrV42DZMd" resolve="InputFieldDeclaration" />
           <node concept="3JmXsc" id="2IhrV42DT2W" role="2P8S$">
             <node concept="3clFbS" id="2IhrV42DT2X" role="2VODD2">
               <node concept="3clFbF" id="2IhrV42DT33" role="3cqZAp">
@@ -287,7 +303,24 @@
         </node>
       </node>
       <node concept="356sEK" id="2IhrV42DT4i" role="383Ya9">
+        <node concept="356sEF" id="2IhrV42EGIe" role="356sEH">
+          <property role="TrG5h" value="GET_TITLE" />
+        </node>
         <node concept="2EixSi" id="2IhrV42DT4k" role="2EinRH" />
+        <node concept="29HgVG" id="2IhrV42EGL8" role="lGtFl">
+          <node concept="3NFfHV" id="2IhrV42EGL9" role="3NFExx">
+            <node concept="3clFbS" id="2IhrV42EGLa" role="2VODD2">
+              <node concept="3clFbF" id="2IhrV42EGLg" role="3cqZAp">
+                <node concept="2OqwBi" id="2IhrV42EGLb" role="3clFbG">
+                  <node concept="3TrEf2" id="2IhrV42EGLe" role="2OqNvi">
+                    <ref role="3Tt5mk" to="brl5:4LWC98SiiYz" resolve="titleField" />
+                  </node>
+                  <node concept="30H73N" id="2IhrV42EGLf" role="2Oq$k0" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="356sEK" id="2IhrV42$3lR" role="383Ya9">
         <node concept="356sEF" id="2IhrV42$3lS" role="356sEH">
@@ -644,6 +677,76 @@
       </node>
       <node concept="raruj" id="2IhrV42Bdn7" role="lGtFl" />
     </node>
+  </node>
+  <node concept="13MO4I" id="2IhrV42EfHE">
+    <property role="TrG5h" value="reduce_Title.py" />
+    <ref role="3gUMe" to="brl5:4LWC98SiiT6" resolve="TitleField" />
+    <node concept="356WMU" id="2IhrV42EfHR" role="13RCb5">
+      <node concept="356WMU" id="2IhrV42EfHT" role="383Ya9">
+        <node concept="356sEK" id="2IhrV42EfHV" role="383Ya9">
+          <node concept="356sEF" id="2IhrV42EfHW" role="356sEH">
+            <property role="TrG5h" value="def get_title" />
+          </node>
+          <node concept="356sEF" id="2IhrV42EfJC" role="356sEH">
+            <property role="TrG5h" value="(" />
+          </node>
+          <node concept="356sEF" id="2IhrV42EfJF" role="356sEH">
+            <property role="TrG5h" value="):" />
+          </node>
+          <node concept="2EixSi" id="2IhrV42EfHX" role="2EinRH" />
+        </node>
+        <node concept="356sEK" id="2IhrV42EfKF" role="383Ya9">
+          <node concept="356sEF" id="2IhrV42EfKG" role="356sEH">
+            <property role="TrG5h" value="  " />
+          </node>
+          <node concept="356sEF" id="2IhrV42EfKQ" role="356sEH">
+            <property role="TrG5h" value="return" />
+          </node>
+          <node concept="356sEF" id="2IhrV42EfKT" role="356sEH">
+            <property role="TrG5h" value=" " />
+          </node>
+          <node concept="356sEF" id="2IhrV42EfKX" role="356sEH">
+            <property role="TrG5h" value="&quot;title&quot;" />
+            <node concept="29HgVG" id="2IhrV42EfL5" role="lGtFl">
+              <node concept="3NFfHV" id="2IhrV42EfL6" role="3NFExx">
+                <node concept="3clFbS" id="2IhrV42EfL7" role="2VODD2">
+                  <node concept="3clFbF" id="2IhrV42EfLd" role="3cqZAp">
+                    <node concept="2OqwBi" id="2IhrV42EfL8" role="3clFbG">
+                      <node concept="3TrEf2" id="2IhrV42EfLb" role="2OqNvi">
+                        <ref role="3Tt5mk" to="brl5:4LWC98SiRhU" resolve="expression" />
+                      </node>
+                      <node concept="30H73N" id="2IhrV42EfLc" role="2Oq$k0" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2EixSi" id="2IhrV42EfKH" role="2EinRH" />
+        </node>
+      </node>
+      <node concept="raruj" id="2IhrV42EfL2" role="lGtFl" />
+    </node>
+  </node>
+  <node concept="13MO4I" id="2IhrV42EfR_">
+    <property role="TrG5h" value="reduce_KeyReference.py" />
+    <ref role="3gUMe" to="brl5:4LWC98Sjr3r" resolve="KeyFieldReference" />
+    <node concept="356sEK" id="2IhrV42Eg9j" role="13RCb5">
+      <node concept="2EixSi" id="2IhrV42Eg9l" role="2EinRH" />
+      <node concept="356sEF" id="2IhrV42Eg9s" role="356sEH">
+        <property role="TrG5h" value="key" />
+        <node concept="2ZBi8u" id="2IhrV42EB3c" role="lGtFl">
+          <ref role="2rW$FS" node="2IhrV42DZMd" resolve="InputFieldDeclaration" />
+        </node>
+      </node>
+      <node concept="356sEF" id="2IhrV42Eg9w" role="356sEH">
+        <property role="TrG5h" value="(response)" />
+      </node>
+      <node concept="raruj" id="2IhrV42Eg9I" role="lGtFl" />
+    </node>
+  </node>
+  <node concept="bUwia" id="3U91Ba2p$To">
+    <property role="TrG5h" value="main" />
   </node>
 </model>
 

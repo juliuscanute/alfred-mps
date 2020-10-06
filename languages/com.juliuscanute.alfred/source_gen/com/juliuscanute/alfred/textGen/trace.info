@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082113931046:jetbrains.mps.baseLanguage.structure.ContinueStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <root>
+    <file name="TextGenAspectDescriptor.java">
+      <unit at="56,0,59,0" name="com.juliuscanute.alfred.textGen.TextGenAspectDescriptor$CONCEPTS" />
+      <unit at="17,0,60,0" name="com.juliuscanute.alfred.textGen.TextGenAspectDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:7948a45f-5e19-4334-b795-9a8ba799b709(com.juliuscanute.alfred.textGen)/3139413221298632237">
+    <file name="SubtitleField_TextGen.java">
+      <node id="3139413221298632237" at="11,54,12,55" concept="4" />
+      <node id="3139413221298632591" at="12,55,13,23" concept="1" />
+      <node id="3139413221298632689" at="13,23,14,31" concept="1" />
+      <node id="4506139991044669822" at="14,31,15,17" concept="1" />
+      <node id="4506139991044670056" at="15,17,16,25" concept="1" />
+      <node id="4506139991044670109" at="16,25,17,28" concept="1" />
+      <node id="3139413221298632237" at="10,0,19,0" concept="3" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="3139413221298632237" at="11,54,17,28">
+        <var name="tgs" id="3139413221298632237" />
+      </scope>
+      <scope id="3139413221298632237" at="10,0,19,0">
+        <var name="ctx" id="3139413221298632237" />
+      </scope>
+      <unit id="3139413221298632237" at="9,0,20,0" name="com.juliuscanute.alfred.textGen.SubtitleField_TextGen" />
+    </file>
+    <file name="TextGenAspectDescriptor.java">
+      <node id="3139413221298632237" at="29,47,30,43" concept="5" />
+      <scope id="3139413221298632237" at="29,47,30,43" />
+    </file>
+  </root>
+  <root nodeRef="r:7948a45f-5e19-4334-b795-9a8ba799b709(com.juliuscanute.alfred.textGen)/4506139991044698523">
+    <file name="AlfredAction_TextGen.java">
+      <node id="4506139991044698523" at="11,54,12,55" concept="4" />
+      <node id="4506139991044701040" at="12,55,13,33" concept="1" />
+      <node id="4506139991044701093" at="13,33,14,18" concept="1" />
+      <node id="4506139991044823438" at="14,18,15,30" concept="1" />
+      <node id="4506139991044823491" at="15,30,16,18" concept="1" />
+      <node id="4506139991044852800" at="16,18,17,18" concept="1" />
+      <node id="4506139991044852614" at="17,18,18,44" concept="1" />
+      <node id="4506139991044852667" at="18,44,19,18" concept="1" />
+      <node id="4506139991044698523" at="19,18,20,44" concept="1" />
+      <node id="4506139991044972430" at="20,44,21,17" concept="1" />
+      <node id="4506139991044852936" at="21,17,22,47" concept="1" />
+      <node id="4506139991044876824" at="22,47,23,18" concept="1" />
+      <node id="4506139991044996102" at="23,18,24,17" concept="1" />
+      <node id="4506139991044853035" at="24,17,25,54" concept="1" />
+      <node id="4506139991044876863" at="25,54,26,18" concept="1" />
+      <node id="4506139991044996217" at="26,18,27,17" concept="1" />
+      <node id="4506139991044853138" at="27,17,28,66" concept="1" />
+      <node id="4506139991044876902" at="28,66,29,18" concept="1" />
+      <node id="4506139991044698523" at="29,18,30,44" concept="1" />
+      <node id="4506139991045043656" at="30,44,31,18" concept="1" />
+      <node id="4506139991045043766" at="31,18,32,39" concept="1" />
+      <node id="4506139991045043819" at="32,39,33,18" concept="1" />
+      <node id="4506139991044698523" at="33,18,34,44" concept="1" />
+      <node id="4506139991045043933" at="34,44,35,17" concept="1" />
+      <node id="4506139991045043990" at="35,17,36,53" concept="1" />
+      <node id="4506139991045044043" at="36,53,37,18" concept="1" />
+      <node id="4506139991045044082" at="37,18,38,17" concept="1" />
+      <node id="4506139991045044390" at="38,17,39,31" concept="1" />
+      <node id="4506139991044698523" at="39,31,40,44" concept="1" />
+      <node id="4506139991045068086" at="40,44,41,18" concept="1" />
+      <node id="4506139991045141141" at="41,18,42,18" concept="1" />
+      <node id="4506139991045117049" at="42,18,43,35" concept="1" />
+      <node id="4506139991045117050" at="43,35,44,18" concept="1" />
+      <node id="4506139991044698523" at="44,18,45,44" concept="1" />
+      <node id="4506139991045117057" at="45,44,46,17" concept="1" />
+      <node id="4506139991045117059" at="46,17,47,35" concept="1" />
+      <node id="4506139991044698523" at="47,35,48,44" concept="1" />
+      <node id="4506139991045117061" at="48,44,49,18" concept="1" />
+      <node id="4506139991045092442" at="49,18,50,18" concept="1" />
+      <node id="4506139991045068208" at="50,18,51,48" concept="1" />
+      <node id="4506139991045068703" at="51,48,52,18" concept="1" />
+      <node id="4506139991044698523" at="52,18,53,44" concept="1" />
+      <node id="4506139991045068554" at="53,44,54,17" concept="1" />
+      <node id="4506139991045068611" at="54,17,55,82" concept="1" />
+      <node id="4506139991045068664" at="55,82,56,18" concept="1" />
+      <node id="4506139991044698523" at="56,18,57,44" concept="1" />
+      <node id="4506139991044698523" at="10,0,59,0" concept="3" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="4506139991044698523" at="11,54,57,44">
+        <var name="tgs" id="4506139991044698523" />
+      </scope>
+      <scope id="4506139991044698523" at="10,0,59,0">
+        <var name="ctx" id="4506139991044698523" />
+      </scope>
+      <unit id="4506139991044698523" at="9,0,60,0" name="com.juliuscanute.alfred.textGen.AlfredAction_TextGen" />
+    </file>
+    <file name="TextGenAspectDescriptor.java">
+      <node id="4506139991044698523" at="27,46,28,42" concept="5" />
+      <node id="4506139991044698523" at="38,63,39,54" concept="4" />
+      <node id="4506139991044698523" at="39,54,40,57" concept="4" />
+      <node id="4506139991044698523" at="40,57,41,129" concept="1" />
+      <node id="4506139991044698523" at="41,129,42,17" concept="0" />
+      <node id="4506139991044698879" at="46,62,47,26" concept="5" />
+      <node id="4506139991044699467" at="49,67,50,16" concept="5" />
+      <node id="4506139991044698523" at="52,52,53,19" concept="5" />
+      <node id="4506139991044698523" at="46,0,49,0" concept="6" trace="getFileName_AlfredAction#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="4506139991044698523" at="49,0,52,0" concept="6" trace="getFileExtension_AlfredAction#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="4506139991044698523" at="52,0,55,0" concept="6" trace="getEncoding_AlfredAction#()Ljava/lang/String;" />
+      <node id="4506139991044698523" at="37,58,43,7" concept="2" />
+      <scope id="4506139991044698523" at="27,46,28,42" />
+      <scope id="4506139991044698523" at="46,62,47,26" />
+      <scope id="4506139991044698523" at="49,67,50,16" />
+      <scope id="4506139991044698523" at="52,52,53,19" />
+      <scope id="4506139991044698523" at="46,0,49,0">
+        <var name="node" id="4506139991044698523" />
+      </scope>
+      <scope id="4506139991044698523" at="49,0,52,0">
+        <var name="node" id="4506139991044698523" />
+      </scope>
+      <scope id="4506139991044698523" at="52,0,55,0" />
+      <scope id="4506139991044698523" at="38,63,42,17">
+        <var name="ext" id="4506139991044698523" />
+        <var name="fname" id="4506139991044698523" />
+      </scope>
+    </file>
+  </root>
+</debug-info>
+

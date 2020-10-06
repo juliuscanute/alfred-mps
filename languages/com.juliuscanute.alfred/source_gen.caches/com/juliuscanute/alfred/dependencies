@@ -4,6 +4,7 @@
     <classNode dependClassName="com.juliuscanute.alfred.editor.EditorAspectDescriptorImpl" />
     <classNode dependClassName="com.juliuscanute.alfred.structure.ConceptPresentationAspectImpl" />
     <classNode dependClassName="com.juliuscanute.alfred.structure.StructureAspectDescriptor" />
+    <classNode dependClassName="com.juliuscanute.alfred.textGen.TextGenAspectDescriptor" />
     <classNode dependClassName="com.juliuscanute.alfred.typesystem.TypesystemDescriptor" />
     <classNode dependClassName="java.lang.Class" />
     <classNode dependClassName="java.lang.Override" />
@@ -17,6 +18,7 @@
     <classNode dependClassName="jetbrains.mps.smodel.runtime.ConceptPresentationAspect" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.ILanguageAspect" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.StructureAspectDescriptor" />
+    <classNode dependClassName="jetbrains.mps.text.rt.TextGenAspectDescriptor" />
     <classNode dependClassName="org.jetbrains.annotations.NotNull" />
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SLanguage" />
     <classNode extendsClassName="jetbrains.mps.smodel.language.LanguageRuntime" />

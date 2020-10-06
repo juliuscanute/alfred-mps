@@ -10,20 +10,22 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import java.util.List;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
+import jetbrains.mps.generator.template.SourceSubstituteMacroNodeContext;
 import jetbrains.mps.generator.template.SourceSubstituteMacroNodesContext;
 import java.util.Map;
-import jetbrains.mps.generator.impl.query.SourceNodesQuery;
+import jetbrains.mps.generator.impl.query.SourceNodeQuery;
 import java.util.HashMap;
 import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.generator.impl.query.QueryKey;
 import jetbrains.mps.generator.impl.query.QueryKeyImpl;
-import java.util.Collection;
+import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.generator.impl.GenerationFailureException;
+import jetbrains.mps.generator.impl.query.SourceNodesQuery;
+import java.util.Collection;
 import jetbrains.mps.util.IterableUtil;
 import jetbrains.mps.generator.impl.query.PropertyValueQuery;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import org.jetbrains.mps.openapi.language.SProperty;
-import org.jetbrains.annotations.Nullable;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
 
 @Generated
@@ -58,11 +60,49 @@ public class QueriesGenerated extends QueryProviderBase {
   public static Object propertyMacro_GetValue_2_1(final PropertyMacroContext _context) {
     return SPropertyOperations.getString(_context.getNode(), PROPS.name$MnvL);
   }
+  public static SNode sourceNodeQuery_1_0(final SourceSubstituteMacroNodeContext _context) {
+    return SLinkOperations.getTarget(_context.getNode(), LINKS.titleField$Htc);
+  }
+  public static SNode sourceNodeQuery_3_0(final SourceSubstituteMacroNodeContext _context) {
+    return SLinkOperations.getTarget(_context.getNode(), LINKS.expression$3XUH);
+  }
   public static Iterable<SNode> sourceNodesQuery_1_0(final SourceSubstituteMacroNodesContext _context) {
     return SLinkOperations.getChildren(_context.getNode(), LINKS.keyField$TO12);
   }
   public static Iterable<SNode> sourceNodesQuery_2_0(final SourceSubstituteMacroNodesContext _context) {
     return SLinkOperations.getChildren(_context.getNode(), LINKS.element$wGmT);
+  }
+  private final Map<String, SourceNodeQuery> snqMethods = new HashMap<String, SourceNodeQuery>();
+  {
+    int i = 0;
+    snqMethods.put("3139413221298588745", new SNQ(i++));
+    snqMethods.put("3139413221298469958", new SNQ(i++));
+  }
+  @NotNull
+  @Override
+  public SourceNodeQuery getSourceNodeQuery(@NotNull QueryKey identity) {
+    final String id = ((QueryKeyImpl) identity).getQueryNodeId().toString();
+    if (!(snqMethods.containsKey(id))) {
+      return super.getSourceNodeQuery(identity);
+    }
+    return snqMethods.get(id);
+  }
+  private static class SNQ implements SourceNodeQuery {
+    private final int methodKey;
+    public SNQ(int methodKey) {
+      this.methodKey = methodKey;
+    }
+    @Nullable
+    public SNode evaluate(@NotNull SourceSubstituteMacroNodeContext ctx) throws GenerationFailureException {
+      switch (methodKey) {
+        case 0:
+          return QueriesGenerated.sourceNodeQuery_1_0(ctx);
+        case 1:
+          return QueriesGenerated.sourceNodeQuery_3_0(ctx);
+        default:
+          throw new GenerationFailureException(String.format("Inconsistent QueriesGenerated: there's no method for query %s (key: #%d)", ctx.getTemplateReference(), methodKey));
+      }
+    }
   }
   private final Map<String, SourceNodesQuery> snsqMethods = new HashMap<String, SourceNodesQuery>();
   {
@@ -148,6 +188,8 @@ public class QueriesGenerated extends QueryProviderBase {
     /*package*/ static final SContainmentLink host$rsO8 = MetaAdapterFactory.getContainmentLink(0xd6f1829c44d840a5L, 0xb1c7596bc2927669L, 0x7ba9e6cfe6cfb739L, 0xb85403e7a8790c1L, "host");
     /*package*/ static final SContainmentLink path$rysw = MetaAdapterFactory.getContainmentLink(0xd6f1829c44d840a5L, 0xb1c7596bc2927669L, 0x7ba9e6cfe6cfb739L, 0xb85403e7a8790c4L, "path");
     /*package*/ static final SContainmentLink paths$qvxG = MetaAdapterFactory.getContainmentLink(0xd6f1829c44d840a5L, 0xb1c7596bc2927669L, 0xb85403e7a8790b7L, 0xb85403e7a879134L, "paths");
+    /*package*/ static final SContainmentLink titleField$Htc = MetaAdapterFactory.getContainmentLink(0xd6f1829c44d840a5L, 0xb1c7596bc2927669L, 0x7ba9e6cfe6cfc808L, 0x4c7ca09238492fa3L, "titleField");
+    /*package*/ static final SContainmentLink expression$3XUH = MetaAdapterFactory.getContainmentLink(0xd6f1829c44d840a5L, 0xb1c7596bc2927669L, 0x4c7ca09238492e46L, 0x4c7ca092384b747aL, "expression");
     /*package*/ static final SContainmentLink keyField$TO12 = MetaAdapterFactory.getContainmentLink(0xd6f1829c44d840a5L, 0xb1c7596bc2927669L, 0x7ba9e6cfe6cfc808L, 0x4c7ca092384ac145L, "keyField");
     /*package*/ static final SContainmentLink element$wGmT = MetaAdapterFactory.getContainmentLink(0xd6f1829c44d840a5L, 0xb1c7596bc2927669L, 0x4c7ca09238492e49L, 0x2b916fb1028edba1L, "element");
   }

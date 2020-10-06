@@ -6,16 +6,6 @@
   </languages>
   <imports />
   <registry>
-    <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
-      <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
-        <property id="1070475926801" name="value" index="Xl_RC" />
-      </concept>
-      <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
-      <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
-        <child id="1081773367579" name="rightExpression" index="3uHU7w" />
-        <child id="1081773367580" name="leftExpression" index="3uHU7B" />
-      </concept>
-    </language>
     <language id="d6f1829c-44d8-40a5-b1c7-596bc2927669" name="com.juliuscanute.alfred">
       <concept id="8910907118334232584" name="com.juliuscanute.alfred.structure.AlfredAction" flags="ng" index="2tpyV7">
         <child id="8910907118334233233" name="conceptField" index="2tpyLu" />
@@ -97,23 +87,13 @@
       </node>
     </node>
     <node concept="1OdoVk" id="4LWC98SiG51" role="1OdoWL">
-      <node concept="3cpWs3" id="2IhrV42AGMQ" role="1OdXjC">
-        <node concept="1Och19" id="2IhrV42AGN2" role="3uHU7w">
-          <ref role="1Och1e" node="2IhrV42AGE7" />
-        </node>
-        <node concept="Xl_RD" id="2IhrV42AGwH" role="3uHU7B">
-          <property role="Xl_RC" value="Character name " />
-        </node>
+      <node concept="1Och19" id="2IhrV42AGN2" role="1OdXjC">
+        <ref role="1Och1e" node="2IhrV42AGE7" />
       </node>
     </node>
     <node concept="1OdoSv" id="4LWC98SiG53" role="1OdoWO">
-      <node concept="3cpWs3" id="2IhrV42AH0b" role="1OdXjW">
-        <node concept="1Och19" id="2IhrV42AH0n" role="3uHU7w">
-          <ref role="1Och1e" node="2IhrV42AGRv" />
-        </node>
-        <node concept="Xl_RD" id="2IhrV42AGDK" role="3uHU7B">
-          <property role="Xl_RC" value="Character color " />
-        </node>
+      <node concept="1Och19" id="2IhrV42AH0n" role="1OdXjW">
+        <ref role="1Och1e" node="2IhrV42AGRv" />
       </node>
     </node>
   </node>
