@@ -5,6 +5,9 @@ package com.juliuscanute.alfred.textGen;
 import jetbrains.mps.text.rt.TextGenDescriptorBase;
 import jetbrains.mps.text.rt.TextGenContext;
 import jetbrains.mps.text.impl.TextGenSupport;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import org.jetbrains.mps.openapi.language.SContainmentLink;
+import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 
 public class AlfredAction_TextGen extends TextGenDescriptorBase {
   @Override
@@ -29,7 +32,7 @@ public class AlfredAction_TextGen extends TextGenDescriptorBase {
     tgs.newLine();
     ctx.getBuffer().area().decreaseIndent();
     tgs.newLine();
-    tgs.append("def key_a(response):");
+    tgs.append("def key(response):");
     tgs.newLine();
     ctx.getBuffer().area().increaseIndent();
     tgs.indent();
@@ -52,8 +55,13 @@ public class AlfredAction_TextGen extends TextGenDescriptorBase {
     tgs.newLine();
     ctx.getBuffer().area().increaseIndent();
     tgs.indent();
-    tgs.append("print(request(method='GET',url='https://swapi.dev/api/people'))");
-    tgs.newLine();
+    tgs.append("print('");
+    UrlField_TextGen.urlfield(SLinkOperations.getTarget(ctx.getPrimaryInput(), LINKS.conceptField$s4gN), ctx);
+    tgs.append("')");
     ctx.getBuffer().area().decreaseIndent();
+  }
+
+  private static final class LINKS {
+    /*package*/ static final SContainmentLink conceptField$s4gN = MetaAdapterFactory.getContainmentLink(0xd6f1829c44d840a5L, 0xb1c7596bc2927669L, 0x7ba9e6cfe6cfc808L, 0x7ba9e6cfe6cfca91L, "conceptField");
   }
 }

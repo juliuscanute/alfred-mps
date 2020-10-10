@@ -36,7 +36,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.HostField:
         if (props_HostField == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("HostField");
+          cpb.presentationByName();
           props_HostField = cpb.create();
         }
         return props_HostField;

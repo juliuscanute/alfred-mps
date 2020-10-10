@@ -2,41 +2,40 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="010e0af5-614d-4735-be5a-510cc59b296c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/languages/com.juliuscanute.alfred/models/com.juliuscanute.alfred.textGen.mps" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/languages/com.juliuscanute.alfred/sandbox/source_gen/com/juliuscanute/alfred/sandbox/AlfredPython.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/languages/com.juliuscanute.alfred/source_gen.caches/com/juliuscanute/alfred/textGen/dependencies" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/languages/com.juliuscanute.alfred/source_gen.caches/com/juliuscanute/alfred/textGen/generated" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/languages/com.juliuscanute.alfred/source_gen/com/juliuscanute/alfred/textGen/AlfredAction_TextGen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/languages/com.juliuscanute.alfred/source_gen/com/juliuscanute/alfred/textGen/SubtitleField_TextGen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/languages/com.juliuscanute.alfred/source_gen/com/juliuscanute/alfred/textGen/TextGenAspectDescriptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/languages/com.juliuscanute.alfred/source_gen/com/juliuscanute/alfred/textGen/aspectcps-descriptorclasses.mps" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/languages/com.juliuscanute.alfred/source_gen/com/juliuscanute/alfred/textGen/checkpoints" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/languages/com.juliuscanute.alfred/source_gen/com/juliuscanute/alfred/textGen/trace.info" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/languages/com.juliuscanute.alfred/source_gen/com/juliuscanute/alfred/textGen/HostField_TextGen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/languages/com.juliuscanute.alfred/source_gen/com/juliuscanute/alfred/textGen/KeyElement_TextGen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/languages/com.juliuscanute.alfred/source_gen/com/juliuscanute/alfred/textGen/PathField_TextGen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/languages/com.juliuscanute.alfred/source_gen/com/juliuscanute/alfred/textGen/SchemeField_TextGen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/languages/com.juliuscanute.alfred/source_gen/com/juliuscanute/alfred/textGen/TitleField_TextGen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/languages/com.juliuscanute.alfred/source_gen/com/juliuscanute/alfred/textGen/UrlField_TextGen.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.mps/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.mps/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/com.juliuscanute.alfred/classes_gen/com/juliuscanute/alfred/Language.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/com.juliuscanute.alfred/classes_gen/com/juliuscanute/alfred/Language.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/com.juliuscanute.alfred/classes_gen/com/juliuscanute/alfred/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/com.juliuscanute.alfred/classes_gen/com/juliuscanute/alfred/trace.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/com.juliuscanute.alfred/com.juliuscanute.alfred.mpl" beforeDir="false" afterPath="$PROJECT_DIR$/languages/com.juliuscanute.alfred/com.juliuscanute.alfred.mpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/com.juliuscanute.alfred/generator/classes_gen/com/juliuscanute/alfred/generator/templates/QueriesGenerated$LINKS.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/com.juliuscanute.alfred/generator/classes_gen/com/juliuscanute/alfred/generator/templates/QueriesGenerated$LINKS.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/com.juliuscanute.alfred/generator/classes_gen/com/juliuscanute/alfred/generator/templates/QueriesGenerated$PROPS.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/com.juliuscanute.alfred/generator/classes_gen/com/juliuscanute/alfred/generator/templates/QueriesGenerated$PROPS.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/com.juliuscanute.alfred/generator/classes_gen/com/juliuscanute/alfred/generator/templates/QueriesGenerated$PVQ.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/com.juliuscanute.alfred/generator/classes_gen/com/juliuscanute/alfred/generator/templates/QueriesGenerated$PVQ.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/com.juliuscanute.alfred/generator/classes_gen/com/juliuscanute/alfred/generator/templates/QueriesGenerated$SNQ.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/com.juliuscanute.alfred/generator/classes_gen/com/juliuscanute/alfred/generator/templates/QueriesGenerated$SNQ.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/com.juliuscanute.alfred/generator/classes_gen/com/juliuscanute/alfred/generator/templates/QueriesGenerated$SNsQ.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/com.juliuscanute.alfred/generator/classes_gen/com/juliuscanute/alfred/generator/templates/QueriesGenerated$SNsQ.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/com.juliuscanute.alfred/generator/classes_gen/com/juliuscanute/alfred/generator/templates/QueriesGenerated.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/com.juliuscanute.alfred/generator/classes_gen/com/juliuscanute/alfred/generator/templates/QueriesGenerated.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/com.juliuscanute.alfred/generator/classes_gen/com/juliuscanute/alfred/generator/templates/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/com.juliuscanute.alfred/generator/classes_gen/com/juliuscanute/alfred/generator/templates/trace.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/com.juliuscanute.alfred/generator/source_gen.caches/com/juliuscanute/alfred/generator/generated" beforeDir="false" afterPath="$PROJECT_DIR$/languages/com.juliuscanute.alfred/generator/source_gen.caches/com/juliuscanute/alfred/generator/generated" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/com.juliuscanute.alfred/generator/source_gen.caches/com/juliuscanute/alfred/generator/templates/dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/languages/com.juliuscanute.alfred/generator/source_gen.caches/com/juliuscanute/alfred/generator/templates/dependencies" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/com.juliuscanute.alfred/generator/source_gen.caches/com/juliuscanute/alfred/generator/templates/generated" beforeDir="false" afterPath="$PROJECT_DIR$/languages/com.juliuscanute.alfred/generator/source_gen.caches/com/juliuscanute/alfred/generator/templates/generated" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/com.juliuscanute.alfred/generator/source_gen/com/juliuscanute/alfred/generator/templates/QueriesGenerated.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/com.juliuscanute.alfred/generator/source_gen/com/juliuscanute/alfred/generator/templates/QueriesGenerated.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/com.juliuscanute.alfred/generator/source_gen/com/juliuscanute/alfred/generator/templates/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/com.juliuscanute.alfred/generator/source_gen/com/juliuscanute/alfred/generator/templates/trace.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/com.juliuscanute.alfred/generator/templates/com.juliuscanute.alfred.generator.templates@generator.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/com.juliuscanute.alfred/generator/templates/com.juliuscanute.alfred.generator.templates@generator.mps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/com.juliuscanute.alfred/sandbox/classes_gen/com/juliuscanute/alfred/sandbox/Entities.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/com.juliuscanute.alfred/sandbox/models/com.juliuscanute.alfred.sandbox.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/com.juliuscanute.alfred/sandbox/models/com.juliuscanute.alfred.sandbox.mps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/com.juliuscanute.alfred/sandbox/source_gen.caches/com/juliuscanute/alfred/sandbox/generated" beforeDir="false" afterPath="$PROJECT_DIR$/languages/com.juliuscanute.alfred/sandbox/source_gen.caches/com/juliuscanute/alfred/sandbox/generated" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/com.juliuscanute.alfred/sandbox/source_gen/com/juliuscanute/alfred/sandbox/Entities.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/com.juliuscanute.alfred/source_gen.caches/com/juliuscanute/alfred/dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/languages/com.juliuscanute.alfred/source_gen.caches/com/juliuscanute/alfred/dependencies" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/com.juliuscanute.alfred/classes_gen/com/juliuscanute/alfred/structure/ConceptPresentationAspectImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/com.juliuscanute.alfred/classes_gen/com/juliuscanute/alfred/structure/ConceptPresentationAspectImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/com.juliuscanute.alfred/classes_gen/com/juliuscanute/alfred/structure/StructureAspectDescriptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/com.juliuscanute.alfred/classes_gen/com/juliuscanute/alfred/structure/StructureAspectDescriptor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/com.juliuscanute.alfred/classes_gen/com/juliuscanute/alfred/structure/aspectcps-descriptorclasses.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/com.juliuscanute.alfred/classes_gen/com/juliuscanute/alfred/structure/aspectcps-descriptorclasses.mps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/com.juliuscanute.alfred/classes_gen/com/juliuscanute/alfred/structure/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/com.juliuscanute.alfred/classes_gen/com/juliuscanute/alfred/structure/trace.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/com.juliuscanute.alfred/classes_gen/com/juliuscanute/alfred/textGen/AlfredAction_TextGen.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/com.juliuscanute.alfred/classes_gen/com/juliuscanute/alfred/textGen/AlfredAction_TextGen.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/com.juliuscanute.alfred/classes_gen/com/juliuscanute/alfred/textGen/SubtitleField_TextGen.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/com.juliuscanute.alfred/classes_gen/com/juliuscanute/alfred/textGen/SubtitleField_TextGen.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/com.juliuscanute.alfred/classes_gen/com/juliuscanute/alfred/textGen/TextGenAspectDescriptor$CONCEPTS.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/com.juliuscanute.alfred/classes_gen/com/juliuscanute/alfred/textGen/TextGenAspectDescriptor$CONCEPTS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/com.juliuscanute.alfred/classes_gen/com/juliuscanute/alfred/textGen/TextGenAspectDescriptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/com.juliuscanute.alfred/classes_gen/com/juliuscanute/alfred/textGen/TextGenAspectDescriptor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/com.juliuscanute.alfred/classes_gen/com/juliuscanute/alfred/textGen/aspectcps-descriptorclasses.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/com.juliuscanute.alfred/classes_gen/com/juliuscanute/alfred/textGen/aspectcps-descriptorclasses.mps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/com.juliuscanute.alfred/classes_gen/com/juliuscanute/alfred/textGen/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/com.juliuscanute.alfred/classes_gen/com/juliuscanute/alfred/textGen/trace.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/com.juliuscanute.alfred/models/com.juliuscanute.alfred.structure.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/com.juliuscanute.alfred/models/com.juliuscanute.alfred.structure.mps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/com.juliuscanute.alfred/models/com.juliuscanute.alfred.textGen.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/com.juliuscanute.alfred/models/com.juliuscanute.alfred.textGen.mps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/com.juliuscanute.alfred/sandbox/classes_gen/com/juliuscanute/alfred/sandbox/AlfredPython.py" beforeDir="false" afterPath="$PROJECT_DIR$/languages/com.juliuscanute.alfred/sandbox/classes_gen/com/juliuscanute/alfred/sandbox/AlfredPython.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/com.juliuscanute.alfred/sandbox/source_gen/com/juliuscanute/alfred/sandbox/AlfredPython.py" beforeDir="false" afterPath="$PROJECT_DIR$/languages/com.juliuscanute.alfred/sandbox/source_gen/com/juliuscanute/alfred/sandbox/AlfredPython.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/com.juliuscanute.alfred/source_gen.caches/com/juliuscanute/alfred/generated" beforeDir="false" afterPath="$PROJECT_DIR$/languages/com.juliuscanute.alfred/source_gen.caches/com/juliuscanute/alfred/generated" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/com.juliuscanute.alfred/source_gen/com/juliuscanute/alfred/Language.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/com.juliuscanute.alfred/source_gen/com/juliuscanute/alfred/Language.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/com.juliuscanute.alfred/source_gen/com/juliuscanute/alfred/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/com.juliuscanute.alfred/source_gen/com/juliuscanute/alfred/trace.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/com.juliuscanute.alfred/source_gen.caches/com/juliuscanute/alfred/structure/generated" beforeDir="false" afterPath="$PROJECT_DIR$/languages/com.juliuscanute.alfred/source_gen.caches/com/juliuscanute/alfred/structure/generated" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/com.juliuscanute.alfred/source_gen.caches/com/juliuscanute/alfred/textGen/dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/languages/com.juliuscanute.alfred/source_gen.caches/com/juliuscanute/alfred/textGen/dependencies" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/com.juliuscanute.alfred/source_gen.caches/com/juliuscanute/alfred/textGen/generated" beforeDir="false" afterPath="$PROJECT_DIR$/languages/com.juliuscanute.alfred/source_gen.caches/com/juliuscanute/alfred/textGen/generated" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/com.juliuscanute.alfred/source_gen/com/juliuscanute/alfred/structure/ConceptPresentationAspectImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/com.juliuscanute.alfred/source_gen/com/juliuscanute/alfred/structure/ConceptPresentationAspectImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/com.juliuscanute.alfred/source_gen/com/juliuscanute/alfred/structure/StructureAspectDescriptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/com.juliuscanute.alfred/source_gen/com/juliuscanute/alfred/structure/StructureAspectDescriptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/com.juliuscanute.alfred/source_gen/com/juliuscanute/alfred/structure/aspectcps-descriptorclasses.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/com.juliuscanute.alfred/source_gen/com/juliuscanute/alfred/structure/aspectcps-descriptorclasses.mps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/com.juliuscanute.alfred/source_gen/com/juliuscanute/alfred/structure/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/com.juliuscanute.alfred/source_gen/com/juliuscanute/alfred/structure/trace.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/com.juliuscanute.alfred/source_gen/com/juliuscanute/alfred/textGen/AlfredAction_TextGen.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/com.juliuscanute.alfred/source_gen/com/juliuscanute/alfred/textGen/AlfredAction_TextGen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/com.juliuscanute.alfred/source_gen/com/juliuscanute/alfred/textGen/SubtitleField_TextGen.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/com.juliuscanute.alfred/source_gen/com/juliuscanute/alfred/textGen/SubtitleField_TextGen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/com.juliuscanute.alfred/source_gen/com/juliuscanute/alfred/textGen/TextGenAspectDescriptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/com.juliuscanute.alfred/source_gen/com/juliuscanute/alfred/textGen/TextGenAspectDescriptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/com.juliuscanute.alfred/source_gen/com/juliuscanute/alfred/textGen/aspectcps-descriptorclasses.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/com.juliuscanute.alfred/source_gen/com/juliuscanute/alfred/textGen/aspectcps-descriptorclasses.mps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/com.juliuscanute.alfred/source_gen/com/juliuscanute/alfred/textGen/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/com.juliuscanute.alfred/source_gen/com/juliuscanute/alfred/textGen/trace.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +48,7 @@
         <TabState>
           <option name="title" value="Console" />
           <tab>
-            <model ref="b82a4d74-93d1-4d42-ad89-f26bfe433185/r:9e8d9e50-43a0-42c4-9f29-bf202eabae14(TempModuleb82a4d74-93d1-4d42-ad89-f26bfe433185/ConsoleModel_313215348988970)">
+            <model ref="c0dd0149-86f3-451b-abb3-9de1b5deb0a1/r:83a2e125-c2a8-41ea-bde0-64350ef5ca22(TempModulec0dd0149-86f3-451b-abb3-9de1b5deb0a1/ConsoleModel_377704853765938)">
               <persistence version="9" />
               <languages>
                 <devkit ref="70d3d6da-af63-483d-a75f-9c8acf8de332(jetbrains.mps.console.devkit)" />
@@ -69,11 +68,11 @@
                   <concept id="757553790980850366" name="jetbrains.mps.console.base.structure.History" flags="ng" index="3balQm" />
                 </language>
               </registry>
-              <node concept="aymSD" id="3U91Ba2pyuY">
-                <node concept="3balQm" id="3U91Ba2pyuZ" role="aymYE" />
-                <node concept="2Clz$F" id="3U91Ba2pyv0" role="aymYO" />
-                <node concept="2_V_lH" id="3U91Ba2pyv1" role="1PhJh3">
-                  <ref role="2_V_lI" node="3U91Ba2pyv0" resolve="CommandHolder" />
+              <node concept="aymSD" id="2yTnTthtelO">
+                <node concept="3balQm" id="2yTnTthtelP" role="aymYE" />
+                <node concept="2Clz$F" id="2yTnTthtelQ" role="aymYO" />
+                <node concept="2_V_lH" id="2yTnTthtelR" role="1PhJh3">
+                  <ref role="2_V_lI" node="2yTnTthtelQ" resolve="CommandHolder" />
                 </node>
               </node>
             </model>
@@ -202,7 +201,11 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="d6f1829c-44d8-40a5-b1c7-596bc2927669(com.juliuscanute.alfred)" />
+              <option name="myItemId" value="cb9efa4a-08b6-4606-a2cc-19f79554f1e9" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -236,53 +239,15 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="r:875b5a93-1fcd-4b47-921d-f89d34e3a3d3(com.juliuscanute.alfred.editor) in IdeaFile[path: /Users/juliuscanute/MPSProjects/AlfredMPS/languages/com.juliuscanute.alfred/models/com.juliuscanute.alfred.editor.mps]" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="8910907118334232613" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="d6f1829c-44d8-40a5-b1c7-596bc2927669(com.juliuscanute.alfred)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:5866f1ba-d229-4d7f-b638-962189776fb1(com.juliuscanute.alfred.typesystem) in IdeaFile[path: /Users/juliuscanute/MPSProjects/AlfredMPS/languages/com.juliuscanute.alfred/models/com.juliuscanute.alfred.typesystem.mps]" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cb9efa4a-08b6-4606-a2cc-19f79554f1e9" />
+              <option name="myItemId" value="com.juliuscanute.alfred.generator" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="com" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="d6f1829c-44d8-40a5-b1c7-596bc2927669(com.juliuscanute.alfred)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com.juliuscanute.alfred.generator" />
+              <option name="myItemId" value="r:7f0b7338-6a49-4c7e-b0a3-779e4156ff6e(com.juliuscanute.alfred.generator.templates@generator) in IdeaFile[path: /Users/juliuscanute/MPSProjects/AlfredMPS/languages/com.juliuscanute.alfred/generator/templates/com.juliuscanute.alfred.generator.templates@generator.mps]" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -328,7 +293,11 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="cb9efa4a-08b6-4606-a2cc-19f79554f1e9" />
+              <option name="myItemId" value="d6f1829c-44d8-40a5-b1c7-596bc2927669(com.juliuscanute.alfred)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com.juliuscanute.alfred.generator" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -342,15 +311,7 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="com.juliuscanute.alfred.generator" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:7f0b7338-6a49-4c7e-b0a3-779e4156ff6e(com.juliuscanute.alfred.generator.templates@generator) in IdeaFile[path: /Users/juliuscanute/MPSProjects/AlfredMPS/languages/com.juliuscanute.alfred/generator/templates/com.juliuscanute.alfred.generator.templates@generator.mps]" />
+              <option name="myItemId" value="r:5866f1ba-d229-4d7f-b638-962189776fb1(com.juliuscanute.alfred.typesystem) in IdeaFile[path: /Users/juliuscanute/MPSProjects/AlfredMPS/languages/com.juliuscanute.alfred/models/com.juliuscanute.alfred.typesystem.mps]" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -377,10 +338,6 @@
               <option name="myItemId" value="d6f1829c-44d8-40a5-b1c7-596bc2927669(com.juliuscanute.alfred)" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:fe9fd3af-0cec-4a66-afd9-dc8a5936ab5a(com.juliuscanute.alfred.behavior) in IdeaFile[path: /Users/juliuscanute/MPSProjects/AlfredMPS/languages/com.juliuscanute.alfred/models/com.juliuscanute.alfred.behavior.mps]" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -388,11 +345,7 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="d6f1829c-44d8-40a5-b1c7-596bc2927669(com.juliuscanute.alfred)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:875b5a93-1fcd-4b47-921d-f89d34e3a3d3(com.juliuscanute.alfred.editor) in IdeaFile[path: /Users/juliuscanute/MPSProjects/AlfredMPS/languages/com.juliuscanute.alfred/models/com.juliuscanute.alfred.editor.mps]" />
+              <option name="myItemId" value="cb9efa4a-08b6-4606-a2cc-19f79554f1e9" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -407,6 +360,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="r:7948a45f-5e19-4334-b795-9a8ba799b709(com.juliuscanute.alfred.textGen) in IdeaFile[path: /Users/juliuscanute/MPSProjects/AlfredMPS/languages/com.juliuscanute.alfred/models/com.juliuscanute.alfred.textGen.mps]" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="d6f1829c-44d8-40a5-b1c7-596bc2927669(com.juliuscanute.alfred)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:fe9fd3af-0cec-4a66-afd9-dc8a5936ab5a(com.juliuscanute.alfred.behavior) in IdeaFile[path: /Users/juliuscanute/MPSProjects/AlfredMPS/languages/com.juliuscanute.alfred/models/com.juliuscanute.alfred.behavior.mps]" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -468,10 +435,10 @@
       <screen x="-190" y="-1080" width="1920" height="1080" />
     </state>
     <state x="458" y="-772" key="#jetbrains.mps.ide.migration.MigrationAssistantWizard/-190.-1080.1920.1080/0.0.1680.1050@-190.-1080.1920.1080" timestamp="1601721485437" />
-    <state x="508" y="-778" key="#jetbrains.mps.workbench.dialogs.project.utildialogs.addmodelimport.AddRequiredModelImportsDialog2" timestamp="1601781205304">
+    <state x="508" y="-778" key="#jetbrains.mps.workbench.dialogs.project.utildialogs.addmodelimport.AddRequiredModelImportsDialog2" timestamp="1602062984648">
       <screen x="-190" y="-1080" width="1920" height="1080" />
     </state>
-    <state x="508" y="-778" key="#jetbrains.mps.workbench.dialogs.project.utildialogs.addmodelimport.AddRequiredModelImportsDialog2/-190.-1080.1920.1080/0.0.1680.1050@-190.-1080.1920.1080" timestamp="1601781205304" />
+    <state x="508" y="-778" key="#jetbrains.mps.workbench.dialogs.project.utildialogs.addmodelimport.AddRequiredModelImportsDialog2/-190.-1080.1920.1080/0.0.1680.1050@-190.-1080.1920.1080" timestamp="1602062984648" />
     <state x="641" y="-693" key="jetbrains.mps.ide.editor.actions.HintsDialog" timestamp="1601807972988">
       <screen x="-190" y="-1080" width="1920" height="1080" />
     </state>

@@ -26,8 +26,12 @@ public class TextGenAspectDescriptor extends TextGenAspectBase {
     switch (myIndex.index(concept)) {
       case LanguageConceptSwitch.AlfredAction:
         return new AlfredAction_TextGen();
+      case LanguageConceptSwitch.KeyElement:
+        return new KeyElement_TextGen();
       case LanguageConceptSwitch.SubtitleField:
         return new SubtitleField_TextGen();
+      case LanguageConceptSwitch.TitleField:
+        return new TitleField_TextGen();
     }
     return null;
   }

@@ -94,6 +94,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   private static ConceptDescriptor createDescriptorForHostField() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("com.juliuscanute.alfred", "HostField", 0xd6f1829c44d840a5L, 0xb1c7596bc2927669L, 0xb85403e7a8790b6L);
     b.class_(false, false, false);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:fd5d1e9a-b58d-43c7-9ef1-adfe2cf25cca(com.juliuscanute.alfred.structure)/830140343407579318");
     b.version(2);
     b.property("host", 0xb85403e7a8790bdL).type(PrimitiveTypeId.STRING).origin("830140343407579325").done();

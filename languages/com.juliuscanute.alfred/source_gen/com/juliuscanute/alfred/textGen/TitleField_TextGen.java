@@ -9,14 +9,14 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 
-public class SubtitleField_TextGen extends TextGenDescriptorBase {
+public class TitleField_TextGen extends TextGenDescriptorBase {
   @Override
   public void generateText(final TextGenContext ctx) {
     final TextGenSupport tgs = new TextGenSupport(ctx);
-    tgs.appendNode(SLinkOperations.getTarget(ctx.getPrimaryInput(), LINKS.expression$3MTt));
+    tgs.appendNode(SLinkOperations.getTarget(ctx.getPrimaryInput(), LINKS.expression$3XUH));
   }
 
   private static final class LINKS {
-    /*package*/ static final SContainmentLink expression$3MTt = MetaAdapterFactory.getContainmentLink(0xd6f1829c44d840a5L, 0xb1c7596bc2927669L, 0x4c7ca09238492e8dL, 0x4c7ca092384b746eL, "expression");
+    /*package*/ static final SContainmentLink expression$3XUH = MetaAdapterFactory.getContainmentLink(0xd6f1829c44d840a5L, 0xb1c7596bc2927669L, 0x4c7ca09238492e46L, 0x4c7ca092384b747aL, "expression");
   }
 }
