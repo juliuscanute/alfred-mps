@@ -43,12 +43,10 @@ public class AlfredAction_TextGen extends TextGenDescriptorBase {
     ctx.getBuffer().area().decreaseIndent();
     tgs.newLine();
     tgs.newLine();
-    tgs.append("def get_title():");
+    SubtitleField_TextGen.subtitleField(ctx);
     tgs.newLine();
-    ctx.getBuffer().area().increaseIndent();
-    tgs.indent();
-    tgs.append("return \"title\"");
-    ctx.getBuffer().area().decreaseIndent();
+    tgs.newLine();
+    TitleField_TextGen.titleField(ctx);
     tgs.newLine();
     tgs.newLine();
     tgs.append("if __name__ == u\"__main__\":");

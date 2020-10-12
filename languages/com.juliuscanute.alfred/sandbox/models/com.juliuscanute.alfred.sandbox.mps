@@ -3,6 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="d6f1829c-44d8-40a5-b1c7-596bc2927669" name="com.juliuscanute.alfred" version="0" />
+    <use id="908554ed-e491-4675-8365-8400a2d8c299" name="com.juliuscanute.python" version="0" />
   </languages>
   <imports />
   <registry>
@@ -14,7 +15,6 @@
         <child id="5511456593864737093" name="keyField" index="1OdA7n" />
       </concept>
       <concept id="8910907118334228281" name="com.juliuscanute.alfred.structure.UrlField" flags="ng" index="2tp_7Q">
-        <property id="8910907118334228282" name="url" index="2tp_7P" />
         <child id="830140343407579327" name="scheme" index="1L0H21" />
         <child id="830140343407579332" name="path" index="1L0H3U" />
         <child id="830140343407579329" name="host" index="1L0H3Z" />
@@ -51,49 +51,37 @@
       </concept>
     </language>
   </registry>
-  <node concept="2tpyV7" id="7IDTGZANYki">
-    <property role="TrG5h" value="GET PLANETS" />
-    <node concept="1OdoVr" id="2IhrV42AGE7" role="1OdA7n">
-      <node concept="D7Vj8" id="2IhrV42AGE8" role="D7Vgg">
-        <property role="TrG5h" value="resuls" />
+  <node concept="2tpyV7" id="4XcrMC7RVUV">
+    <property role="TrG5h" value="fsdfsdf" />
+    <node concept="2tp_7Q" id="4XcrMC7RVUW" role="2tpyLu">
+      <node concept="1L0H26" id="4XcrMC7RVUX" role="1L0H21">
+        <property role="1L0H27" value="sfdfsdfsd" />
       </node>
-      <node concept="D7Vj8" id="2IhrV42AGEb" role="D7Vgg">
-        <property role="TrG5h" value="name" />
+      <node concept="1L0H28" id="4XcrMC7RVUY" role="1L0H3Z">
+        <property role="1L0H23" value="fsdfsdfsdf" />
       </node>
-    </node>
-    <node concept="1OdoVr" id="2IhrV42AGRv" role="1OdA7n">
-      <node concept="D7Vj8" id="2IhrV42AGRw" role="D7Vgg">
-        <property role="TrG5h" value="results" />
-      </node>
-      <node concept="D7Vj8" id="2IhrV42AGRA" role="D7Vgg">
-        <property role="TrG5h" value="hair_color" />
-      </node>
-    </node>
-    <node concept="2tp_7Q" id="7IDTGZANYkj" role="2tpyLu">
-      <property role="2tp_7P" value="http://google.com" />
-      <node concept="1L0H26" id="I5g3TUxWKP" role="1L0H21">
-        <property role="1L0H27" value="https" />
-      </node>
-      <node concept="1L0H28" id="I5g3TUxWKR" role="1L0H3Z">
-        <property role="1L0H23" value="swapi.dev" />
-      </node>
-      <node concept="1L0H29" id="I5g3TUxWKT" role="1L0H3U">
-        <node concept="1L0H4G" id="I5g3TU$oVU" role="1L0H4a">
-          <property role="1L0H4H" value="api" />
+      <node concept="1L0H29" id="4XcrMC7RVUZ" role="1L0H3U">
+        <node concept="1L0H4G" id="4XcrMC7RVV6" role="1L0H4a">
+          <property role="1L0H4H" value="sdfsdf" />
         </node>
-        <node concept="1L0H4G" id="I5g3TU$oVW" role="1L0H4a">
-          <property role="1L0H4H" value="people" />
+        <node concept="1L0H4G" id="4XcrMC7RVV8" role="1L0H4a">
+          <property role="1L0H4H" value="fsdfsdf" />
         </node>
       </node>
     </node>
-    <node concept="1OdoVk" id="4LWC98SiG51" role="1OdoWL">
-      <node concept="1Och19" id="2IhrV42AGN2" role="1OdXjC">
-        <ref role="1Och1e" node="2IhrV42AGE7" />
+    <node concept="1OdoVr" id="4XcrMC7RVV0" role="1OdA7n">
+      <node concept="D7Vj8" id="4XcrMC7RVV1" role="D7Vgg">
+        <property role="TrG5h" value="sdfsdfsdf" />
       </node>
     </node>
-    <node concept="1OdoSv" id="4LWC98SiG53" role="1OdoWO">
-      <node concept="1Och19" id="2IhrV42AH0n" role="1OdXjW">
-        <ref role="1Och1e" node="2IhrV42AGRv" />
+    <node concept="1OdoVk" id="4XcrMC7RVV2" role="1OdoWL">
+      <node concept="1Och19" id="4XcrMC7RVVh" role="1OdXjC">
+        <ref role="1Och1e" node="4XcrMC7RVV0" />
+      </node>
+    </node>
+    <node concept="1OdoSv" id="4XcrMC7RVV4" role="1OdoWO">
+      <node concept="1Och19" id="4XcrMC7RVVn" role="1OdXjW">
+        <ref role="1Och1e" node="4XcrMC7RVV0" />
       </node>
     </node>
   </node>

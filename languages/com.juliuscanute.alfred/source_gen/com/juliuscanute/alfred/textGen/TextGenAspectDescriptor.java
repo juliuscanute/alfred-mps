@@ -28,10 +28,6 @@ public class TextGenAspectDescriptor extends TextGenAspectBase {
         return new AlfredAction_TextGen();
       case LanguageConceptSwitch.KeyElement:
         return new KeyElement_TextGen();
-      case LanguageConceptSwitch.SubtitleField:
-        return new SubtitleField_TextGen();
-      case LanguageConceptSwitch.TitleField:
-        return new TitleField_TextGen();
     }
     return null;
   }
