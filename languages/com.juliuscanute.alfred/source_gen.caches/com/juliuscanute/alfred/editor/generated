@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<product version="3" modelHash="1fa5wi298ulv56bmhhnfhd7omxfbaaj">
-  <files names="AlfredAction_Editor.java:AlfredAction_EditorBuilder_a.java:EditorAspectDescriptorImpl.java:HostField_Editor.java:HostField_EditorBuilder_a.java:KeyElement_Editor.java:KeyElement_EditorBuilder_a.java:KeyFieldReference_Editor.java:KeyFieldReference_EditorBuilder_a.java:KeyFieldReference_SubstituteMenu.java:KeyField_Editor.java:KeyField_EditorBuilder_a.java:PathField_Editor.java:PathField_EditorBuilder_a.java:SchemeField_Editor.java:SchemeField_EditorBuilder_a.java:SinglePathField_Editor.java:SinglePathField_EditorBuilder_a.java:SubtitleField_Editor.java:SubtitleField_EditorBuilder_a.java:TitleField_Editor.java:TitleField_EditorBuilder_a.java:UrlField_Editor.java:UrlField_EditorBuilder_a.java" />
-</product>
-
