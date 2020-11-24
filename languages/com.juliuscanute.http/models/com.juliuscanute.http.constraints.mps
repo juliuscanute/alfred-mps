@@ -61,7 +61,7 @@
   </registry>
   <node concept="1M2fIO" id="24K5qUvqZ7S">
     <property role="3GE5qa" value="expression" />
-    <ref role="1M2myG" to="brl5:24K5qUvp3Oe" resolve="StringLiteral" />
+    <ref role="1M2myG" to="brl5:24K5qUvp3Oe" resolve="IntegerLiteral" />
     <node concept="EnEH3" id="24K5qUvqZ7T" role="1MhHOB">
       <ref role="EomxK" to="brl5:24K5qUvp4by" resolve="value" />
       <node concept="QB0g5" id="24K5qUvqZ9z" role="QCWH9">
@@ -72,7 +72,7 @@
               <node concept="liA8E" id="24K5qUvqZNZ" role="2OqNvi">
                 <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String)" resolve="matches" />
                 <node concept="Xl_RD" id="3OJQ3uSdzF6" role="37wK5m">
-                  <property role="Xl_RC" value="[a-zA-Z0-9]*" />
+                  <property role="Xl_RC" value="[0-9]+" />
                 </node>
               </node>
             </node>

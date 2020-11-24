@@ -13,18 +13,26 @@ import jetbrains.mps.smodel.runtime.impl.ConceptDescriptorBuilder2;
 import jetbrains.mps.smodel.adapter.ids.PrimitiveTypeId;
 
 public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
+  /*package*/ final ConceptDescriptor myConceptBinaryArithmeticOperations = createDescriptorForBinaryArithmeticOperations();
+  /*package*/ final ConceptDescriptor myConceptBinaryComparisonOperations = createDescriptorForBinaryComparisonOperations();
   /*package*/ final ConceptDescriptor myConceptBinaryExpression = createDescriptorForBinaryExpression();
   /*package*/ final ConceptDescriptor myConceptDivideExpression = createDescriptorForDivideExpression();
   /*package*/ final ConceptDescriptor myConceptEmptyHttpAction = createDescriptorForEmptyHttpAction();
+  /*package*/ final ConceptDescriptor myConceptEqualExpression = createDescriptorForEqualExpression();
   /*package*/ final ConceptDescriptor myConceptExpression = createDescriptorForExpression();
   /*package*/ final ConceptDescriptor myConceptGetHttpAction = createDescriptorForGetHttpAction();
+  /*package*/ final ConceptDescriptor myConceptGreaterThanExpression = createDescriptorForGreaterThanExpression();
+  /*package*/ final ConceptDescriptor myConceptGreaterThanOrEqualToExpression = createDescriptorForGreaterThanOrEqualToExpression();
   /*package*/ final ConceptDescriptor myConceptHTTPAction = createDescriptorForHTTPAction();
   /*package*/ final ConceptDescriptor myConceptHTTPActionList = createDescriptorForHTTPActionList();
   /*package*/ final ConceptDescriptor myConceptHTTPProgram = createDescriptorForHTTPProgram();
+  /*package*/ final ConceptDescriptor myConceptIntegerLiteral = createDescriptorForIntegerLiteral();
+  /*package*/ final ConceptDescriptor myConceptLessThanExpression = createDescriptorForLessThanExpression();
+  /*package*/ final ConceptDescriptor myConceptLessThanOrEqualToExpression = createDescriptorForLessThanOrEqualToExpression();
   /*package*/ final ConceptDescriptor myConceptMinusExpression = createDescriptorForMinusExpression();
   /*package*/ final ConceptDescriptor myConceptMultiplyExpression = createDescriptorForMultiplyExpression();
+  /*package*/ final ConceptDescriptor myConceptNotEqualExpression = createDescriptorForNotEqualExpression();
   /*package*/ final ConceptDescriptor myConceptPlusExpression = createDescriptorForPlusExpression();
-  /*package*/ final ConceptDescriptor myConceptStringLiteral = createDescriptorForStringLiteral();
   private final LanguageConceptSwitch myIndexSwitch;
 
   public StructureAspectDescriptor() {
@@ -39,37 +47,53 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptBinaryExpression, myConceptDivideExpression, myConceptEmptyHttpAction, myConceptExpression, myConceptGetHttpAction, myConceptHTTPAction, myConceptHTTPActionList, myConceptHTTPProgram, myConceptMinusExpression, myConceptMultiplyExpression, myConceptPlusExpression, myConceptStringLiteral);
+    return Arrays.asList(myConceptBinaryArithmeticOperations, myConceptBinaryComparisonOperations, myConceptBinaryExpression, myConceptDivideExpression, myConceptEmptyHttpAction, myConceptEqualExpression, myConceptExpression, myConceptGetHttpAction, myConceptGreaterThanExpression, myConceptGreaterThanOrEqualToExpression, myConceptHTTPAction, myConceptHTTPActionList, myConceptHTTPProgram, myConceptIntegerLiteral, myConceptLessThanExpression, myConceptLessThanOrEqualToExpression, myConceptMinusExpression, myConceptMultiplyExpression, myConceptNotEqualExpression, myConceptPlusExpression);
   }
 
   @Override
   @Nullable
   public ConceptDescriptor getDescriptor(SConceptId id) {
     switch (myIndexSwitch.index(id)) {
+      case LanguageConceptSwitch.BinaryArithmeticOperations:
+        return myConceptBinaryArithmeticOperations;
+      case LanguageConceptSwitch.BinaryComparisonOperations:
+        return myConceptBinaryComparisonOperations;
       case LanguageConceptSwitch.BinaryExpression:
         return myConceptBinaryExpression;
       case LanguageConceptSwitch.DivideExpression:
         return myConceptDivideExpression;
       case LanguageConceptSwitch.EmptyHttpAction:
         return myConceptEmptyHttpAction;
+      case LanguageConceptSwitch.EqualExpression:
+        return myConceptEqualExpression;
       case LanguageConceptSwitch.Expression:
         return myConceptExpression;
       case LanguageConceptSwitch.GetHttpAction:
         return myConceptGetHttpAction;
+      case LanguageConceptSwitch.GreaterThanExpression:
+        return myConceptGreaterThanExpression;
+      case LanguageConceptSwitch.GreaterThanOrEqualToExpression:
+        return myConceptGreaterThanOrEqualToExpression;
       case LanguageConceptSwitch.HTTPAction:
         return myConceptHTTPAction;
       case LanguageConceptSwitch.HTTPActionList:
         return myConceptHTTPActionList;
       case LanguageConceptSwitch.HTTPProgram:
         return myConceptHTTPProgram;
+      case LanguageConceptSwitch.IntegerLiteral:
+        return myConceptIntegerLiteral;
+      case LanguageConceptSwitch.LessThanExpression:
+        return myConceptLessThanExpression;
+      case LanguageConceptSwitch.LessThanOrEqualToExpression:
+        return myConceptLessThanOrEqualToExpression;
       case LanguageConceptSwitch.MinusExpression:
         return myConceptMinusExpression;
       case LanguageConceptSwitch.MultiplyExpression:
         return myConceptMultiplyExpression;
+      case LanguageConceptSwitch.NotEqualExpression:
+        return myConceptNotEqualExpression;
       case LanguageConceptSwitch.PlusExpression:
         return myConceptPlusExpression;
-      case LanguageConceptSwitch.StringLiteral:
-        return myConceptStringLiteral;
       default:
         return null;
     }
@@ -80,6 +104,22 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     return myIndexSwitch.index(c);
   }
 
+  private static ConceptDescriptor createDescriptorForBinaryArithmeticOperations() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("com.juliuscanute.http", "BinaryArithmeticOperations", 0xd6f1829c44d840a5L, 0xb1c7596bc2927669L, 0x192e5d4619286196L);
+    b.class_(false, true, false);
+    b.super_("com.juliuscanute.http.structure.BinaryExpression", 0xd6f1829c44d840a5L, 0xb1c7596bc2927669L, 0x213015ae9f644361L);
+    b.origin("r:fd5d1e9a-b58d-43c7-9ef1-adfe2cf25cca(com.juliuscanute.http.structure)/1814490255528059286");
+    b.version(2);
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForBinaryComparisonOperations() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("com.juliuscanute.http", "BinaryComparisonOperations", 0xd6f1829c44d840a5L, 0xb1c7596bc2927669L, 0x192e5d46192bcd0aL);
+    b.class_(false, true, false);
+    b.super_("com.juliuscanute.http.structure.BinaryExpression", 0xd6f1829c44d840a5L, 0xb1c7596bc2927669L, 0x213015ae9f644361L);
+    b.origin("r:fd5d1e9a-b58d-43c7-9ef1-adfe2cf25cca(com.juliuscanute.http.structure)/1814490255528283402");
+    b.version(2);
+    return b.create();
+  }
   private static ConceptDescriptor createDescriptorForBinaryExpression() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("com.juliuscanute.http", "BinaryExpression", 0xd6f1829c44d840a5L, 0xb1c7596bc2927669L, 0x213015ae9f644361L);
     b.class_(false, false, false);
@@ -93,7 +133,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   private static ConceptDescriptor createDescriptorForDivideExpression() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("com.juliuscanute.http", "DivideExpression", 0xd6f1829c44d840a5L, 0xb1c7596bc2927669L, 0x213015ae9f645487L);
     b.class_(false, false, false);
-    b.super_("com.juliuscanute.http.structure.BinaryExpression", 0xd6f1829c44d840a5L, 0xb1c7596bc2927669L, 0x213015ae9f644361L);
+    b.super_("com.juliuscanute.http.structure.BinaryArithmeticOperations", 0xd6f1829c44d840a5L, 0xb1c7596bc2927669L, 0x192e5d4619286196L);
     b.origin("r:fd5d1e9a-b58d-43c7-9ef1-adfe2cf25cca(com.juliuscanute.http.structure)/2391435241876378759");
     b.version(2);
     b.alias("/");
@@ -105,6 +145,15 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.parent(0xd6f1829c44d840a5L, 0xb1c7596bc2927669L, 0x5e5f23e9f35a2787L);
     b.origin("r:fd5d1e9a-b58d-43c7-9ef1-adfe2cf25cca(com.juliuscanute.http.structure)/6800193450069862453");
     b.version(2);
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForEqualExpression() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("com.juliuscanute.http", "EqualExpression", 0xd6f1829c44d840a5L, 0xb1c7596bc2927669L, 0x192e5d46192bcd0bL);
+    b.class_(false, false, false);
+    b.super_("com.juliuscanute.http.structure.BinaryComparisonOperations", 0xd6f1829c44d840a5L, 0xb1c7596bc2927669L, 0x192e5d46192bcd0aL);
+    b.origin("r:fd5d1e9a-b58d-43c7-9ef1-adfe2cf25cca(com.juliuscanute.http.structure)/1814490255528283403");
+    b.version(2);
+    b.alias("==");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForExpression() {
@@ -122,6 +171,24 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.version(2);
     b.aggregate("expression", 0x213015ae9f64560eL).target(0xd6f1829c44d840a5L, 0xb1c7596bc2927669L, 0x213015ae9f643d10L).optional(false).ordered(true).multiple(false).origin("2391435241876379150").done();
     b.alias("get");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForGreaterThanExpression() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("com.juliuscanute.http", "GreaterThanExpression", 0xd6f1829c44d840a5L, 0xb1c7596bc2927669L, 0x192e5d46192bcd29L);
+    b.class_(false, false, false);
+    b.super_("com.juliuscanute.http.structure.BinaryComparisonOperations", 0xd6f1829c44d840a5L, 0xb1c7596bc2927669L, 0x192e5d46192bcd0aL);
+    b.origin("r:fd5d1e9a-b58d-43c7-9ef1-adfe2cf25cca(com.juliuscanute.http.structure)/1814490255528283433");
+    b.version(2);
+    b.alias(">");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForGreaterThanOrEqualToExpression() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("com.juliuscanute.http", "GreaterThanOrEqualToExpression", 0xd6f1829c44d840a5L, 0xb1c7596bc2927669L, 0x192e5d46192bcd0cL);
+    b.class_(false, false, false);
+    b.super_("com.juliuscanute.http.structure.BinaryComparisonOperations", 0xd6f1829c44d840a5L, 0xb1c7596bc2927669L, 0x192e5d46192bcd0aL);
+    b.origin("r:fd5d1e9a-b58d-43c7-9ef1-adfe2cf25cca(com.juliuscanute.http.structure)/1814490255528283404");
+    b.version(2);
+    b.alias(">=");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForHTTPAction() {
@@ -148,10 +215,37 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.aggregate("statements", 0x5e5f23e9f35a2834L).target(0xd6f1829c44d840a5L, 0xb1c7596bc2927669L, 0x5e5f23e9f35a278aL).optional(false).ordered(true).multiple(false).origin("6800193450069862452").done();
     return b.create();
   }
+  private static ConceptDescriptor createDescriptorForIntegerLiteral() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("com.juliuscanute.http", "IntegerLiteral", 0xd6f1829c44d840a5L, 0xb1c7596bc2927669L, 0x213015ae9f643d0eL);
+    b.class_(false, false, false);
+    b.parent(0xd6f1829c44d840a5L, 0xb1c7596bc2927669L, 0x213015ae9f643d10L);
+    b.origin("r:fd5d1e9a-b58d-43c7-9ef1-adfe2cf25cca(com.juliuscanute.http.structure)/2391435241876372750");
+    b.version(2);
+    b.property("value", 0x213015ae9f6442e2L).type(PrimitiveTypeId.STRING).origin("2391435241876374242").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForLessThanExpression() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("com.juliuscanute.http", "LessThanExpression", 0xd6f1829c44d840a5L, 0xb1c7596bc2927669L, 0x192e5d46192bcd28L);
+    b.class_(false, false, false);
+    b.super_("com.juliuscanute.http.structure.BinaryComparisonOperations", 0xd6f1829c44d840a5L, 0xb1c7596bc2927669L, 0x192e5d46192bcd0aL);
+    b.origin("r:fd5d1e9a-b58d-43c7-9ef1-adfe2cf25cca(com.juliuscanute.http.structure)/1814490255528283432");
+    b.version(2);
+    b.alias("<");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForLessThanOrEqualToExpression() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("com.juliuscanute.http", "LessThanOrEqualToExpression", 0xd6f1829c44d840a5L, 0xb1c7596bc2927669L, 0x192e5d46192bcd27L);
+    b.class_(false, false, false);
+    b.super_("com.juliuscanute.http.structure.BinaryComparisonOperations", 0xd6f1829c44d840a5L, 0xb1c7596bc2927669L, 0x192e5d46192bcd0aL);
+    b.origin("r:fd5d1e9a-b58d-43c7-9ef1-adfe2cf25cca(com.juliuscanute.http.structure)/1814490255528283431");
+    b.version(2);
+    b.alias("<=");
+    return b.create();
+  }
   private static ConceptDescriptor createDescriptorForMinusExpression() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("com.juliuscanute.http", "MinusExpression", 0xd6f1829c44d840a5L, 0xb1c7596bc2927669L, 0x213015ae9f8a0179L);
     b.class_(false, false, false);
-    b.super_("com.juliuscanute.http.structure.BinaryExpression", 0xd6f1829c44d840a5L, 0xb1c7596bc2927669L, 0x213015ae9f644361L);
+    b.super_("com.juliuscanute.http.structure.BinaryArithmeticOperations", 0xd6f1829c44d840a5L, 0xb1c7596bc2927669L, 0x192e5d4619286196L);
     b.origin("r:fd5d1e9a-b58d-43c7-9ef1-adfe2cf25cca(com.juliuscanute.http.structure)/2391435241878847865");
     b.version(2);
     b.alias("-");
@@ -160,28 +254,28 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   private static ConceptDescriptor createDescriptorForMultiplyExpression() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("com.juliuscanute.http", "MultiplyExpression", 0xd6f1829c44d840a5L, 0xb1c7596bc2927669L, 0x213015ae9f8a017aL);
     b.class_(false, false, false);
-    b.super_("com.juliuscanute.http.structure.BinaryExpression", 0xd6f1829c44d840a5L, 0xb1c7596bc2927669L, 0x213015ae9f644361L);
+    b.super_("com.juliuscanute.http.structure.BinaryArithmeticOperations", 0xd6f1829c44d840a5L, 0xb1c7596bc2927669L, 0x192e5d4619286196L);
     b.origin("r:fd5d1e9a-b58d-43c7-9ef1-adfe2cf25cca(com.juliuscanute.http.structure)/2391435241878847866");
     b.version(2);
     b.alias("*");
     return b.create();
   }
+  private static ConceptDescriptor createDescriptorForNotEqualExpression() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("com.juliuscanute.http", "NotEqualExpression", 0xd6f1829c44d840a5L, 0xb1c7596bc2927669L, 0x192e5d46192bcd2aL);
+    b.class_(false, false, false);
+    b.super_("com.juliuscanute.http.structure.BinaryComparisonOperations", 0xd6f1829c44d840a5L, 0xb1c7596bc2927669L, 0x192e5d46192bcd0aL);
+    b.origin("r:fd5d1e9a-b58d-43c7-9ef1-adfe2cf25cca(com.juliuscanute.http.structure)/1814490255528283434");
+    b.version(2);
+    b.alias("!=");
+    return b.create();
+  }
   private static ConceptDescriptor createDescriptorForPlusExpression() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("com.juliuscanute.http", "PlusExpression", 0xd6f1829c44d840a5L, 0xb1c7596bc2927669L, 0x213015ae9f8a0178L);
     b.class_(false, false, false);
-    b.super_("com.juliuscanute.http.structure.BinaryExpression", 0xd6f1829c44d840a5L, 0xb1c7596bc2927669L, 0x213015ae9f644361L);
+    b.super_("com.juliuscanute.http.structure.BinaryArithmeticOperations", 0xd6f1829c44d840a5L, 0xb1c7596bc2927669L, 0x192e5d4619286196L);
     b.origin("r:fd5d1e9a-b58d-43c7-9ef1-adfe2cf25cca(com.juliuscanute.http.structure)/2391435241878847864");
     b.version(2);
     b.alias("+");
-    return b.create();
-  }
-  private static ConceptDescriptor createDescriptorForStringLiteral() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("com.juliuscanute.http", "StringLiteral", 0xd6f1829c44d840a5L, 0xb1c7596bc2927669L, 0x213015ae9f643d0eL);
-    b.class_(false, false, false);
-    b.parent(0xd6f1829c44d840a5L, 0xb1c7596bc2927669L, 0x213015ae9f643d10L);
-    b.origin("r:fd5d1e9a-b58d-43c7-9ef1-adfe2cf25cca(com.juliuscanute.http.structure)/2391435241876372750");
-    b.version(2);
-    b.property("value", 0x213015ae9f6442e2L).type(PrimitiveTypeId.STRING).origin("2391435241876374242").done();
     return b.create();
   }
 }

@@ -151,12 +151,12 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
         public Iterable<SubstituteMenuItem> query() {
           List<SubstituteMenuItem> result = ListSequence.fromList(new ArrayList<SubstituteMenuItem>());
           _context.getEditorMenuTrace().pushTraceInfo();
-          _context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("grammar.wrap in " + "StringLiteral", new SNodePointer("r:875b5a93-1fcd-4b47-921d-f89d34e3a3d3(com.juliuscanute.http.editor)", "2391435241876374325")));
+          _context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("grammar.wrap in " + "IntegerLiteral", new SNodePointer("r:875b5a93-1fcd-4b47-921d-f89d34e3a3d3(com.juliuscanute.http.editor)", "2391435241876374325")));
           try {
-            if (SConceptOperations.isExactly(SNodeOperations.asSConcept(expectedOutputConceptExactly), CONCEPTS.StringLiteral$rc)) {
+            if (SConceptOperations.isExactly(SNodeOperations.asSConcept(expectedOutputConceptExactly), CONCEPTS.IntegerLiteral$rc)) {
               final SAbstractConcept expectedOutputConcept = GrammarCellsUtil.getExpectedOutputConcept(_context, expectedOutputConceptExactly);
 
-              for (SConcept subconcept : ListSequence.fromList(GrammarCellsUtil.getVisibleSubconceptsNonAbstract(CONCEPTS.StringLiteral$rc, _context.getModel(), StringLiteral_Editor.class, _context.getEditorContext()))) {
+              for (SConcept subconcept : ListSequence.fromList(GrammarCellsUtil.getVisibleSubconceptsNonAbstract(CONCEPTS.IntegerLiteral$rc, _context.getModel(), IntegerLiteral_Editor.class, _context.getEditorContext()))) {
                 final SConcept outputConcept = ((SConcept) subconcept);
 
                 if (SConceptOperations.isSubConceptOf(SNodeOperations.asSConcept(outputConcept), SNodeOperations.asSConcept(expectedOutputConcept))) {
@@ -195,7 +195,7 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
 
                       @Override
                       public SAbstractConcept getOutputConcept() {
-                        return CONCEPTS.StringLiteral$rc;
+                        return CONCEPTS.IntegerLiteral$rc;
                       }
                     });
                   }
@@ -482,7 +482,7 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
             public Iterable<TransformationMenuItem> query(final TransformationMenuContext _context) {
               List<TransformationMenuItem> result = ListSequence.fromList(new ArrayList<TransformationMenuItem>());
               _context.getEditorMenuTrace().pushTraceInfo();
-              _context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("grammar.wrap in " + "StringLiteral", new SNodePointer("r:875b5a93-1fcd-4b47-921d-f89d34e3a3d3(com.juliuscanute.http.editor)", "2391435241876374325")));
+              _context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("grammar.wrap in " + "IntegerLiteral", new SNodePointer("r:875b5a93-1fcd-4b47-921d-f89d34e3a3d3(com.juliuscanute.http.editor)", "2391435241876374325")));
               try {
               } finally {
                 _context.getEditorMenuTrace().popTraceInfo();
@@ -718,12 +718,12 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
     final Set<SLanguage> visibleLanguages = GrammarCellsUtil.getVisibleLanguages(contextModel);
 
     {
-      final List<SConcept> subconcepts = GrammarCellsUtil.getVisibleSubconceptsNonAbstract(CONCEPTS.StringLiteral$rc, visibleLanguages);
+      final List<SConcept> subconcepts = GrammarCellsUtil.getVisibleSubconceptsNonAbstract(CONCEPTS.IntegerLiteral$rc, visibleLanguages);
       for (final SAbstractConcept subconcept : subconcepts) {
         ListSequence.fromList(rules).addElement(new AbstractRule() {
           private List<ISymbol> symbols = ListSequence.fromList(new ArrayList<ISymbol>());
           {
-            ListSequence.fromList(symbols).addElement(new PropertySymbol(CONCEPTS.StringLiteral$rc, PROPS.value$h8jJ));
+            ListSequence.fromList(symbols).addElement(new PropertySymbol(CONCEPTS.IntegerLiteral$rc, PROPS.value$h8jJ));
             symbols = ListSequence.fromList(symbols).where(new IWhereFilter<ISymbol>() {
               public boolean accept(ISymbol it) {
                 return it != null;
@@ -740,7 +740,7 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
           }
           @Override
           public SAbstractConcept getDefinedForConcept() {
-            return CONCEPTS.StringLiteral$rc;
+            return CONCEPTS.IntegerLiteral$rc;
           }
           @Override
           public String toString() {
@@ -794,7 +794,7 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
   private static final class CONCEPTS {
     /*package*/ static final SInterfaceConcept Expression$sa = MetaAdapterFactory.getInterfaceConcept(0xd6f1829c44d840a5L, 0xb1c7596bc2927669L, 0x213015ae9f643d10L, "com.juliuscanute.http.structure.Expression");
     /*package*/ static final SConcept GetHttpAction$46 = MetaAdapterFactory.getConcept(0xd6f1829c44d840a5L, 0xb1c7596bc2927669L, 0x5e5f23e9f35f0252L, "com.juliuscanute.http.structure.GetHttpAction");
-    /*package*/ static final SConcept StringLiteral$rc = MetaAdapterFactory.getConcept(0xd6f1829c44d840a5L, 0xb1c7596bc2927669L, 0x213015ae9f643d0eL, "com.juliuscanute.http.structure.StringLiteral");
+    /*package*/ static final SConcept IntegerLiteral$rc = MetaAdapterFactory.getConcept(0xd6f1829c44d840a5L, 0xb1c7596bc2927669L, 0x213015ae9f643d0eL, "com.juliuscanute.http.structure.IntegerLiteral");
     /*package*/ static final SConcept BinaryExpression$$E = MetaAdapterFactory.getConcept(0xd6f1829c44d840a5L, 0xb1c7596bc2927669L, 0x213015ae9f644361L, "com.juliuscanute.http.structure.BinaryExpression");
   }
 

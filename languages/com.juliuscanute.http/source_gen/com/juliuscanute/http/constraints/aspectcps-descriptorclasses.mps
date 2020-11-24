@@ -220,7 +220,7 @@
             <node concept="3clFbS" id="k" role="1pnPq1">
               <node concept="3cpWs6" id="m" role="3cqZAp">
                 <node concept="1nCR9W" id="n" role="3cqZAk">
-                  <property role="1nD$Q0" value="com.juliuscanute.http.constraints.StringLiteral_Constraints" />
+                  <property role="1nD$Q0" value="com.juliuscanute.http.constraints.IntegerLiteral_Constraints" />
                   <node concept="3uibUv" id="o" role="2lIhxL">
                     <ref role="3uigEE" to="ze1i:~ConstraintsDescriptor" resolve="ConstraintsDescriptor" />
                   </node>
@@ -228,7 +228,7 @@
               </node>
             </node>
             <node concept="3gn64h" id="l" role="1pnPq6">
-              <ref role="3gnhBz" to="brl5:24K5qUvp3Oe" resolve="StringLiteral" />
+              <ref role="3gnhBz" to="brl5:24K5qUvp3Oe" resolve="IntegerLiteral" />
             </node>
           </node>
           <node concept="3clFbS" id="j" role="1prKM_" />
@@ -259,7 +259,7 @@
   </node>
   <node concept="312cEu" id="w">
     <property role="3GE5qa" value="expression" />
-    <property role="TrG5h" value="StringLiteral_Constraints" />
+    <property role="TrG5h" value="IntegerLiteral_Constraints" />
     <node concept="3Tm1VV" id="x" role="1B3o_S">
       <node concept="cd27G" id="C" role="lGtFl">
         <node concept="3u3nmq" id="D" role="cd27D">
@@ -288,7 +288,7 @@
           <ref role="37wK5l" to="79pl:~BaseConstraintsDescriptor.&lt;init&gt;(org.jetbrains.mps.openapi.language.SAbstractConcept)" resolve="BaseConstraintsDescriptor" />
           <node concept="1BaE9c" id="O" role="37wK5m">
             <property role="1ouuDV" value="CONCEPTS" />
-            <property role="1BaxDp" value="StringLiteral$rc" />
+            <property role="1BaxDp" value="IntegerLiteral$rc" />
             <node concept="2YIFZM" id="Q" role="1Bazha">
               <ref role="1Pybhc" to="2k9e:~MetaAdapterFactory" resolve="MetaAdapterFactory" />
               <ref role="37wK5l" to="2k9e:~MetaAdapterFactory.getConcept(long,long,long,java.lang.String)" resolve="getConcept" />
@@ -317,7 +317,7 @@
                 </node>
               </node>
               <node concept="Xl_RD" id="V" role="37wK5m">
-                <property role="Xl_RC" value="com.juliuscanute.http.structure.StringLiteral" />
+                <property role="Xl_RC" value="com.juliuscanute.http.structure.IntegerLiteral" />
                 <node concept="cd27G" id="13" role="lGtFl">
                   <node concept="3u3nmq" id="14" role="cd27D">
                     <property role="3u3nmv" value="2391435241876877816" />
@@ -910,7 +910,7 @@
               <node concept="liA8E" id="4_" role="2OqNvi">
                 <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String)" resolve="matches" />
                 <node concept="Xl_RD" id="4D" role="37wK5m">
-                  <property role="Xl_RC" value="[a-zA-Z0-9]*" />
+                  <property role="Xl_RC" value="[0-9]+" />
                   <node concept="cd27G" id="4F" role="lGtFl">
                     <node concept="3u3nmq" id="4G" role="cd27D">
                       <property role="3u3nmv" value="4408980294044367558" />
@@ -1146,7 +1146,7 @@
               </node>
               <node concept="2ShNRf" id="5G" role="37wK5m">
                 <node concept="1pGfFk" id="62" role="2ShVmc">
-                  <ref role="37wK5l" node="1e" resolve="StringLiteral_Constraints.Value_Property" />
+                  <ref role="37wK5l" node="1e" resolve="IntegerLiteral_Constraints.Value_Property" />
                   <node concept="Xjq3P" id="64" role="37wK5m">
                     <node concept="cd27G" id="66" role="lGtFl">
                       <node concept="3u3nmq" id="67" role="cd27D">

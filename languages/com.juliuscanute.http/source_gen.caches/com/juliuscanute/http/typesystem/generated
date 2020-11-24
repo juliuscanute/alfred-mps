@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<product version="3" modelHash="2431ixduwsxvto6qbli00hhmqtvo4yc">
-  <files names="TypesystemDescriptor.java" />
+<product version="3" modelHash="-8s9lbjrmwklcarvuvjex6h0chv4wnva">
+  <files names="TypesystemDescriptor.java:typeof_NumericLiteral_InferenceRule.java" />
 </product>
 

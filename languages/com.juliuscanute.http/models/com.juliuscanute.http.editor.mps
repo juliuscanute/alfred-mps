@@ -17,6 +17,7 @@
         <child id="1140524464360" name="cellLayout" index="2czzBx" />
       </concept>
       <concept id="1106270549637" name="jetbrains.mps.lang.editor.structure.CellLayout_Horizontal" flags="nn" index="2iRfu4" />
+      <concept id="1106270571710" name="jetbrains.mps.lang.editor.structure.CellLayout_Vertical" flags="nn" index="2iRkQZ" />
       <concept id="1237303669825" name="jetbrains.mps.lang.editor.structure.CellLayout_Indent" flags="nn" index="l2Vlx" />
       <concept id="1237307900041" name="jetbrains.mps.lang.editor.structure.IndentLayoutIndentStyleClassItem" flags="ln" index="lj46D" />
       <concept id="1237308012275" name="jetbrains.mps.lang.editor.structure.IndentLayoutNewLineStyleClassItem" flags="ln" index="ljvvj" />
@@ -131,21 +132,24 @@
   <node concept="24kQdi" id="5Tv8YBNnK9I">
     <property role="3GE5qa" value="statement" />
     <ref role="1XX52x" to="brl5:5Tv8YBNnK9i" resolve="GetHttpAction" />
-    <node concept="3EZMnI" id="5Tv8YBNnK9K" role="2wV5jI">
-      <node concept="3F0ifn" id="5Tv8YBNnK9O" role="3EZMnx">
-        <property role="3F0ifm" value="GET" />
-      </node>
-      <node concept="l2Vlx" id="5Tv8YBNnK9N" role="2iSdaV" />
-      <node concept="1kIj98" id="24K5qUvp5oj" role="3EZMnx">
-        <node concept="3F1sOY" id="24K5qUvp5oq" role="1kIj9b">
-          <ref role="1NtTu8" to="brl5:24K5qUvp5oe" resolve="expression" />
+    <node concept="3EZMnI" id="24K5qUv_tRg" role="2wV5jI">
+      <node concept="2iRkQZ" id="24K5qUv_tRh" role="2iSdaV" />
+      <node concept="3EZMnI" id="5Tv8YBNnK9K" role="3EZMnx">
+        <node concept="3F0ifn" id="5Tv8YBNnK9O" role="3EZMnx">
+          <property role="3F0ifm" value="GET" />
+        </node>
+        <node concept="l2Vlx" id="5Tv8YBNnK9N" role="2iSdaV" />
+        <node concept="1kIj98" id="24K5qUvp5oj" role="3EZMnx">
+          <node concept="3F1sOY" id="24K5qUvp5oq" role="1kIj9b">
+            <ref role="1NtTu8" to="brl5:24K5qUvp5oe" resolve="expression" />
+          </node>
         </node>
       </node>
     </node>
   </node>
   <node concept="24kQdi" id="24K5qUvp4c2">
     <property role="3GE5qa" value="expression" />
-    <ref role="1XX52x" to="brl5:24K5qUvp3Oe" resolve="StringLiteral" />
+    <ref role="1XX52x" to="brl5:24K5qUvp3Oe" resolve="IntegerLiteral" />
     <node concept="1WcQYu" id="24K5qUvp4cg" role="2wV5jI">
       <node concept="2ElW$n" id="24K5qUvp4ci" role="2El2Yn" />
       <node concept="1kIj98" id="24K5qUvp4cP" role="1LiK7o">

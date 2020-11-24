@@ -8,6 +8,7 @@ import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.openapi.editor.EditorContext;
 import jetbrains.mps.openapi.editor.cells.EditorCell;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Collection;
+import jetbrains.mps.nodeEditor.cellLayout.CellLayout_Vertical;
 import jetbrains.mps.nodeEditor.cellLayout.CellLayout_Indent;
 import jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes;
 import jetbrains.mps.openapi.editor.cells.CellActionType;
@@ -48,10 +49,16 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
   }
 
   private EditorCell createCollection_0() {
-    EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Indent());
+    EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Vertical());
     editorCell.setCellId("Collection_48mj0c_a");
     editorCell.setBig(true);
     setCellContext(editorCell);
+    editorCell.addEditorCell(createCollection_1());
+    return editorCell;
+  }
+  private EditorCell createCollection_1() {
+    EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Indent());
+    editorCell.setCellId("Collection_48mj0c_a0");
     editorCell.addEditorCell(createCustomFactory_1());
     editorCell.addEditorCell(createRefNode_0());
     return editorCell;
@@ -118,19 +125,19 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
   }
   private EditorCell createConstant_0() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "GET");
-    editorCell.setCellId("Constant_48mj0c_a0a");
+    editorCell.setCellId("Constant_48mj0c_a0a0");
     editorCell.setDefaultText("");
     return editorCell;
   }
   private EditorCell createRefNode_0() {
-    SingleRoleCellProvider provider = new expressionSingleRoleHandler_48mj0c_b0(myNode, LINKS.expression$zwYw, getEditorContext());
+    SingleRoleCellProvider provider = new expressionSingleRoleHandler_48mj0c_b0a(myNode, LINKS.expression$zwYw, getEditorContext());
     return provider.createCell();
   }
-  private static class expressionSingleRoleHandler_48mj0c_b0 extends SingleRoleCellProvider {
+  private static class expressionSingleRoleHandler_48mj0c_b0a extends SingleRoleCellProvider {
     @NotNull
     private SNode myNode;
 
-    public expressionSingleRoleHandler_48mj0c_b0(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
+    public expressionSingleRoleHandler_48mj0c_b0a(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
       super(containmentLink, context);
       myNode = ownerNode;
     }

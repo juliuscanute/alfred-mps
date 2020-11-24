@@ -19,7 +19,7 @@ public class ConstraintsAspectDescriptor extends BaseConstraintsAspectDescriptor
     SAbstractConcept cncpt = concept;
     switch (conceptIndex.index(cncpt)) {
       case 0:
-        return new StringLiteral_Constraints();
+        return new IntegerLiteral_Constraints();
       default:
     }
     return new BaseConstraintsDescriptor(concept);

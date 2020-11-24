@@ -9,33 +9,49 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 
 public final class LanguageConceptSwitch {
   private final LanguageConceptIndex myIndex;
-  public static final int BinaryExpression = 0;
-  public static final int DivideExpression = 1;
-  public static final int EmptyHttpAction = 2;
-  public static final int Expression = 3;
-  public static final int GetHttpAction = 4;
-  public static final int HTTPAction = 5;
-  public static final int HTTPActionList = 6;
-  public static final int HTTPProgram = 7;
-  public static final int MinusExpression = 8;
-  public static final int MultiplyExpression = 9;
-  public static final int PlusExpression = 10;
-  public static final int StringLiteral = 11;
+  public static final int BinaryArithmeticOperations = 0;
+  public static final int BinaryComparisonOperations = 1;
+  public static final int BinaryExpression = 2;
+  public static final int DivideExpression = 3;
+  public static final int EmptyHttpAction = 4;
+  public static final int EqualExpression = 5;
+  public static final int Expression = 6;
+  public static final int GetHttpAction = 7;
+  public static final int GreaterThanExpression = 8;
+  public static final int GreaterThanOrEqualToExpression = 9;
+  public static final int HTTPAction = 10;
+  public static final int HTTPActionList = 11;
+  public static final int HTTPProgram = 12;
+  public static final int IntegerLiteral = 13;
+  public static final int LessThanExpression = 14;
+  public static final int LessThanOrEqualToExpression = 15;
+  public static final int MinusExpression = 16;
+  public static final int MultiplyExpression = 17;
+  public static final int NotEqualExpression = 18;
+  public static final int PlusExpression = 19;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0xd6f1829c44d840a5L, 0xb1c7596bc2927669L);
+    builder.put(0x192e5d4619286196L, BinaryArithmeticOperations);
+    builder.put(0x192e5d46192bcd0aL, BinaryComparisonOperations);
     builder.put(0x213015ae9f644361L, BinaryExpression);
     builder.put(0x213015ae9f645487L, DivideExpression);
     builder.put(0x5e5f23e9f35a2835L, EmptyHttpAction);
+    builder.put(0x192e5d46192bcd0bL, EqualExpression);
     builder.put(0x213015ae9f643d10L, Expression);
     builder.put(0x5e5f23e9f35f0252L, GetHttpAction);
+    builder.put(0x192e5d46192bcd29L, GreaterThanExpression);
+    builder.put(0x192e5d46192bcd0cL, GreaterThanOrEqualToExpression);
     builder.put(0x5e5f23e9f35a2787L, HTTPAction);
     builder.put(0x5e5f23e9f35a278aL, HTTPActionList);
     builder.put(0x5e5f23e9f35a2786L, HTTPProgram);
+    builder.put(0x213015ae9f643d0eL, IntegerLiteral);
+    builder.put(0x192e5d46192bcd28L, LessThanExpression);
+    builder.put(0x192e5d46192bcd27L, LessThanOrEqualToExpression);
     builder.put(0x213015ae9f8a0179L, MinusExpression);
     builder.put(0x213015ae9f8a017aL, MultiplyExpression);
+    builder.put(0x192e5d46192bcd2aL, NotEqualExpression);
     builder.put(0x213015ae9f8a0178L, PlusExpression);
-    builder.put(0x213015ae9f643d0eL, StringLiteral);
     myIndex = builder.seal();
   }
 
