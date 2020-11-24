@@ -16,9 +16,9 @@ import java.util.HashMap;
 import org.jetbrains.mps.openapi.language.SConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 
-public class StringLiteral_Constraints extends BaseConstraintsDescriptor {
-  public StringLiteral_Constraints() {
-    super(CONCEPTS.StringLiteral$rc);
+public class IntegerLiteral_Constraints extends BaseConstraintsDescriptor {
+  public IntegerLiteral_Constraints() {
+    super(CONCEPTS.IntegerLiteral$rc);
   }
 
   public static class Value_Property extends BasePropertyConstraintsDescriptor {
@@ -39,7 +39,7 @@ public class StringLiteral_Constraints extends BaseConstraintsDescriptor {
       return result;
     }
     private static boolean staticValidateProperty(SNode node, String propertyValue) {
-      return propertyValue.matches("[a-zA-Z0-9]*");
+      return propertyValue.matches("[0-9]+");
     }
   }
   @Override
@@ -50,7 +50,7 @@ public class StringLiteral_Constraints extends BaseConstraintsDescriptor {
   }
 
   private static final class CONCEPTS {
-    /*package*/ static final SConcept StringLiteral$rc = MetaAdapterFactory.getConcept(0xd6f1829c44d840a5L, 0xb1c7596bc2927669L, 0x213015ae9f643d0eL, "com.juliuscanute.http.structure.StringLiteral");
+    /*package*/ static final SConcept IntegerLiteral$rc = MetaAdapterFactory.getConcept(0xd6f1829c44d840a5L, 0xb1c7596bc2927669L, 0x213015ae9f643d0eL, "com.juliuscanute.http.structure.IntegerLiteral");
   }
 
   private static final class PROPS {

@@ -15,11 +15,11 @@ import com.mbeddr.mpsutil.grammarcells.runtime.NumberLiteralTokenizer;
 import jetbrains.mps.nodeEditor.EditorManager;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 
-/*package*/ class StringLiteral_EditorBuilder_a extends AbstractEditorBuilder {
+/*package*/ class IntegerLiteral_EditorBuilder_a extends AbstractEditorBuilder {
   @NotNull
   private SNode myNode;
 
-  public StringLiteral_EditorBuilder_a(@NotNull EditorContext context, @NotNull SNode node) {
+  public IntegerLiteral_EditorBuilder_a(@NotNull EditorContext context, @NotNull SNode node) {
     super(context);
     myNode = node;
   }

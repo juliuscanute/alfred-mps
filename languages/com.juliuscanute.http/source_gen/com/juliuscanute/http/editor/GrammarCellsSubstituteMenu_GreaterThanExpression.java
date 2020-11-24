@@ -18,15 +18,15 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import org.jetbrains.mps.openapi.language.SConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 
-public class GrammarCellsSubstituteMenu_StringLiteral extends SubstituteMenuBase {
-  public GrammarCellsSubstituteMenu_StringLiteral() {
+public class GrammarCellsSubstituteMenu_GreaterThanExpression extends SubstituteMenuBase {
+  public GrammarCellsSubstituteMenu_GreaterThanExpression() {
     super(true);
   }
   @NotNull
   @Override
   protected List<MenuPart<SubstituteMenuItem, SubstituteMenuContext>> getParts(final SubstituteMenuContext _context) {
     List<MenuPart<SubstituteMenuItem, SubstituteMenuContext>> result = new ArrayList<MenuPart<SubstituteMenuItem, SubstituteMenuContext>>();
-    result.add(new GrammarCellsSubstituteMenuPart_q3mtwh_a());
+    result.add(new GrammarCellsSubstituteMenuPart_vpzvuz_a());
     return result;
   }
 
@@ -34,7 +34,7 @@ public class GrammarCellsSubstituteMenu_StringLiteral extends SubstituteMenuBase
   @Override
   public List<SubstituteMenuItem> createMenuItems(@NotNull SubstituteMenuContext context) {
     context.getEditorMenuTrace().pushTraceInfo();
-    context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("contribution to the " + "default substitute menu for " + "StringLiteral", null));
+    context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("contribution to the " + "default substitute menu for " + "GreaterThanExpression", null));
     try {
       return super.createMenuItems(context);
     } finally {
@@ -43,18 +43,18 @@ public class GrammarCellsSubstituteMenu_StringLiteral extends SubstituteMenuBase
   }
 
 
-  private class GrammarCellsSubstituteMenuPart_q3mtwh_a extends GrammarCellsSubstituteMenuPart {
+  private class GrammarCellsSubstituteMenuPart_vpzvuz_a extends GrammarCellsSubstituteMenuPart {
     @Override
     public SModule getModule(SRepository repository) {
       return PersistenceFacade.getInstance().createModuleReference("d6f1829c-44d8-40a5-b1c7-596bc2927669(com.juliuscanute.http)").resolve(repository);
     }
     @Override
     public SAbstractConcept getExpectedOutputConcept() {
-      return CONCEPTS.StringLiteral$rc;
+      return CONCEPTS.GreaterThanExpression$K4;
     }
   }
 
   private static final class CONCEPTS {
-    /*package*/ static final SConcept StringLiteral$rc = MetaAdapterFactory.getConcept(0xd6f1829c44d840a5L, 0xb1c7596bc2927669L, 0x213015ae9f643d0eL, "com.juliuscanute.http.structure.StringLiteral");
+    /*package*/ static final SConcept GreaterThanExpression$K4 = MetaAdapterFactory.getConcept(0xd6f1829c44d840a5L, 0xb1c7596bc2927669L, 0x192e5d46192bcd29L, "com.juliuscanute.http.structure.GreaterThanExpression");
   }
 }
