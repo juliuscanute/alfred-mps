@@ -23,15 +23,19 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptGetHttpAction = createDescriptorForGetHttpAction();
   /*package*/ final ConceptDescriptor myConceptGreaterThanExpression = createDescriptorForGreaterThanExpression();
   /*package*/ final ConceptDescriptor myConceptGreaterThanOrEqualToExpression = createDescriptorForGreaterThanOrEqualToExpression();
+  /*package*/ final ConceptDescriptor myConceptGuiAction = createDescriptorForGuiAction();
   /*package*/ final ConceptDescriptor myConceptHTTPAction = createDescriptorForHTTPAction();
   /*package*/ final ConceptDescriptor myConceptHTTPActionList = createDescriptorForHTTPActionList();
   /*package*/ final ConceptDescriptor myConceptHTTPProgram = createDescriptorForHTTPProgram();
+  /*package*/ final ConceptDescriptor myConceptInputAction = createDescriptorForInputAction();
+  /*package*/ final ConceptDescriptor myConceptInputReferenceExpression = createDescriptorForInputReferenceExpression();
   /*package*/ final ConceptDescriptor myConceptIntegerLiteral = createDescriptorForIntegerLiteral();
   /*package*/ final ConceptDescriptor myConceptLessThanExpression = createDescriptorForLessThanExpression();
   /*package*/ final ConceptDescriptor myConceptLessThanOrEqualToExpression = createDescriptorForLessThanOrEqualToExpression();
   /*package*/ final ConceptDescriptor myConceptMinusExpression = createDescriptorForMinusExpression();
   /*package*/ final ConceptDescriptor myConceptMultiplyExpression = createDescriptorForMultiplyExpression();
   /*package*/ final ConceptDescriptor myConceptNotEqualExpression = createDescriptorForNotEqualExpression();
+  /*package*/ final ConceptDescriptor myConceptOutputAction = createDescriptorForOutputAction();
   /*package*/ final ConceptDescriptor myConceptPlusExpression = createDescriptorForPlusExpression();
   private final LanguageConceptSwitch myIndexSwitch;
 
@@ -47,7 +51,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptBinaryArithmeticOperations, myConceptBinaryComparisonOperations, myConceptBinaryExpression, myConceptDivideExpression, myConceptEmptyHttpAction, myConceptEqualExpression, myConceptExpression, myConceptGetHttpAction, myConceptGreaterThanExpression, myConceptGreaterThanOrEqualToExpression, myConceptHTTPAction, myConceptHTTPActionList, myConceptHTTPProgram, myConceptIntegerLiteral, myConceptLessThanExpression, myConceptLessThanOrEqualToExpression, myConceptMinusExpression, myConceptMultiplyExpression, myConceptNotEqualExpression, myConceptPlusExpression);
+    return Arrays.asList(myConceptBinaryArithmeticOperations, myConceptBinaryComparisonOperations, myConceptBinaryExpression, myConceptDivideExpression, myConceptEmptyHttpAction, myConceptEqualExpression, myConceptExpression, myConceptGetHttpAction, myConceptGreaterThanExpression, myConceptGreaterThanOrEqualToExpression, myConceptGuiAction, myConceptHTTPAction, myConceptHTTPActionList, myConceptHTTPProgram, myConceptInputAction, myConceptInputReferenceExpression, myConceptIntegerLiteral, myConceptLessThanExpression, myConceptLessThanOrEqualToExpression, myConceptMinusExpression, myConceptMultiplyExpression, myConceptNotEqualExpression, myConceptOutputAction, myConceptPlusExpression);
   }
 
   @Override
@@ -74,12 +78,18 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptGreaterThanExpression;
       case LanguageConceptSwitch.GreaterThanOrEqualToExpression:
         return myConceptGreaterThanOrEqualToExpression;
+      case LanguageConceptSwitch.GuiAction:
+        return myConceptGuiAction;
       case LanguageConceptSwitch.HTTPAction:
         return myConceptHTTPAction;
       case LanguageConceptSwitch.HTTPActionList:
         return myConceptHTTPActionList;
       case LanguageConceptSwitch.HTTPProgram:
         return myConceptHTTPProgram;
+      case LanguageConceptSwitch.InputAction:
+        return myConceptInputAction;
+      case LanguageConceptSwitch.InputReferenceExpression:
+        return myConceptInputReferenceExpression;
       case LanguageConceptSwitch.IntegerLiteral:
         return myConceptIntegerLiteral;
       case LanguageConceptSwitch.LessThanExpression:
@@ -92,6 +102,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptMultiplyExpression;
       case LanguageConceptSwitch.NotEqualExpression:
         return myConceptNotEqualExpression;
+      case LanguageConceptSwitch.OutputAction:
+        return myConceptOutputAction;
       case LanguageConceptSwitch.PlusExpression:
         return myConceptPlusExpression;
       default:
@@ -191,6 +203,18 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.alias(">=");
     return b.create();
   }
+  private static ConceptDescriptor createDescriptorForGuiAction() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("com.juliuscanute.http", "GuiAction", 0xd6f1829c44d840a5L, 0xb1c7596bc2927669L, 0x69112fe5db1e2327L);
+    b.class_(false, false, false);
+    b.parent(0xd6f1829c44d840a5L, 0xb1c7596bc2927669L, 0x5e5f23e9f35a2787L);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
+    b.origin("r:fd5d1e9a-b58d-43c7-9ef1-adfe2cf25cca(com.juliuscanute.http.structure)/7570885112856716071");
+    b.version(2);
+    b.aggregate("inputs", 0x69112fe5db2881eaL).target(0xd6f1829c44d840a5L, 0xb1c7596bc2927669L, 0x69112fe5db288170L).optional(true).ordered(true).multiple(true).origin("7570885112857395690").done();
+    b.aggregate("output", 0x69112fe5db31cc5cL).target(0xd6f1829c44d840a5L, 0xb1c7596bc2927669L, 0x69112fe5db3047edL).optional(false).ordered(true).multiple(false).origin("7570885112858004572").done();
+    b.alias("GUI");
+    return b.create();
+  }
   private static ConceptDescriptor createDescriptorForHTTPAction() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("com.juliuscanute.http", "HTTPAction", 0xd6f1829c44d840a5L, 0xb1c7596bc2927669L, 0x5e5f23e9f35a2787L);
     b.interface_();
@@ -213,6 +237,24 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:fd5d1e9a-b58d-43c7-9ef1-adfe2cf25cca(com.juliuscanute.http.structure)/6800193450069862278");
     b.version(2);
     b.aggregate("statements", 0x5e5f23e9f35a2834L).target(0xd6f1829c44d840a5L, 0xb1c7596bc2927669L, 0x5e5f23e9f35a278aL).optional(false).ordered(true).multiple(false).origin("6800193450069862452").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForInputAction() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("com.juliuscanute.http", "InputAction", 0xd6f1829c44d840a5L, 0xb1c7596bc2927669L, 0x69112fe5db288170L);
+    b.class_(false, false, false);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
+    b.origin("r:fd5d1e9a-b58d-43c7-9ef1-adfe2cf25cca(com.juliuscanute.http.structure)/7570885112857395568");
+    b.version(2);
+    b.alias("input");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForInputReferenceExpression() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("com.juliuscanute.http", "InputReferenceExpression", 0xd6f1829c44d840a5L, 0xb1c7596bc2927669L, 0x69112fe5db2881bdL);
+    b.class_(false, false, false);
+    b.parent(0xd6f1829c44d840a5L, 0xb1c7596bc2927669L, 0x213015ae9f643d10L);
+    b.origin("r:fd5d1e9a-b58d-43c7-9ef1-adfe2cf25cca(com.juliuscanute.http.structure)/7570885112857395645");
+    b.version(2);
+    b.associate("declaration", 0x69112fe5db2881c0L).target(0xd6f1829c44d840a5L, 0xb1c7596bc2927669L, 0x69112fe5db288170L).optional(false).origin("7570885112857395648").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForIntegerLiteral() {
@@ -267,6 +309,16 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:fd5d1e9a-b58d-43c7-9ef1-adfe2cf25cca(com.juliuscanute.http.structure)/1814490255528283434");
     b.version(2);
     b.alias("!=");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForOutputAction() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("com.juliuscanute.http", "OutputAction", 0xd6f1829c44d840a5L, 0xb1c7596bc2927669L, 0x69112fe5db3047edL);
+    b.class_(false, false, false);
+    b.parent(0xd6f1829c44d840a5L, 0xb1c7596bc2927669L, 0x5e5f23e9f35a2787L);
+    b.origin("r:fd5d1e9a-b58d-43c7-9ef1-adfe2cf25cca(com.juliuscanute.http.structure)/7570885112857905133");
+    b.version(2);
+    b.aggregate("expression", 0x69112fe5db31cc22L).target(0xd6f1829c44d840a5L, 0xb1c7596bc2927669L, 0x213015ae9f643d10L).optional(false).ordered(true).multiple(false).origin("7570885112858004514").done();
+    b.alias("output");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForPlusExpression() {

@@ -115,6 +115,7 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
                             SNode wrapper = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(outputConcept));
                             SLinkOperations.setTarget(wrapper, LINKS.expression$zwYw, SNodeOperations.cast(nodeToWrap, CONCEPTS.Expression$sa));
                             NodeFactoryManager.setupNode(outputConcept, wrapper, _context.getCurrentTargetNode(), _context.getParentNode(), _context.getModel());
+
                             return wrapper;
                           }
                           @Override
@@ -184,6 +185,7 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
                       public SNode createNode(@NotNull String pattern) {
                         SNode newNode = SNodeFactoryOperations.createNewNode(expectedOutputConceptExactly, null);
                         SPropertyOperations.assign(newNode, PROPS.value$h8jJ, GrammarCellsUtil.toInternalPropertyValue(myProperty, pattern));
+
                         return newNode;
                       }
 
@@ -258,6 +260,7 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
                             SNode wrapper = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(outputConcept));
                             SLinkOperations.setTarget(wrapper, LINKS.left$r_JF, SNodeOperations.cast(nodeToWrap, CONCEPTS.Expression$sa));
                             NodeFactoryManager.setupNode(outputConcept, wrapper, _context.getCurrentTargetNode(), _context.getParentNode(), _context.getModel());
+
                             return wrapper;
                           }
                           @Override
@@ -335,6 +338,7 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
                             SNode wrapper = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(outputConcept));
                             SLinkOperations.setTarget(wrapper, LINKS.right$rAdH, SNodeOperations.cast(nodeToWrap, CONCEPTS.Expression$sa));
                             NodeFactoryManager.setupNode(outputConcept, wrapper, _context.getCurrentTargetNode(), _context.getParentNode(), _context.getModel());
+
                             return wrapper;
                           }
                           @Override
